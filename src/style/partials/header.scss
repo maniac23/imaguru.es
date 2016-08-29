@@ -183,9 +183,9 @@
 
 @media only screen and (max-width: 1024px) {
   .main-header {
+    align-items: flex-start;
     padding-top: 20px;
     padding-bottom: 20px;
-    align-items: flex-start;
   }
 
   .logo {
@@ -225,17 +225,21 @@
       top: 100%;
       right: 0;
       left: 0;
+
       display: none;
       width: 100vw;
       height: 40px;
       padding: 5px 10px;
+
       font-size: 1.25rem;
+
       background-image: none;
       border-top: 1px solid $dark-font-color;
       border-bottom: 1px solid $dark-font-color;
 
       &:focus {
         width: 100vw;
+
         font-size: 1.25rem;
       }
     }
@@ -251,15 +255,18 @@
 
   .menu-dropdown {
     position: static;
+
     display: flex;
     flex-direction: column;
     padding: 20px 0 10px;
+
     background-color: transparent;
 
     a {
       width: 100%;
       margin-right: 0;
       margin-left: 20px;
+
       color: $dark-font-color;
 
       &:not(:last-child) {

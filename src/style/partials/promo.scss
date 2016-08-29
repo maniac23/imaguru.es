@@ -125,6 +125,7 @@
   &__title {
     margin: 0;
     padding: 0;
+
     font-size: 0;
   }
 
@@ -148,6 +149,7 @@
   &__paragraph {
     margin: 0;
     padding: 0;
+
     font-size: 1.875rem;
   }
 
@@ -175,12 +177,13 @@
   text-align: center;
 
   &__title {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+
     font-weight: 500;
     font-size: 1.25rem;
     color: $white-color;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 50px;
   }
 
   &__list {
@@ -295,5 +298,4 @@
   .features__item {
     flex-basis: 50%;
   }
-
 }
