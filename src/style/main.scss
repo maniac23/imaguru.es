@@ -2,6 +2,8 @@
 * Third Party
 */
 @import "../../bower_components/normalize.css/normalize.css";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+
 /*
 * Custom
 */
@@ -11,4 +13,6 @@
 @import "partials/header";
 @import "partials/promo";
 @import "partials/row";
+@import "partials/slider";
+@import "partials/slick-controls";
 @import "partials/footer";
