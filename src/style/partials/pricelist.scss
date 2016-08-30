@@ -1,0 +1,91 @@
+.pricelist {
+  & > ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    flex: 1 0 33.33%;
+    padding: 40px 7.8125%;
+    text-align: left;
+    position: relative;
+    min-height: 500px;
+
+    &:nth-child(2n+2) {
+      background-color: $grey;
+    }
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  &__descr {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  &__features {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+
+    li {
+      font-size: 1.125rem;
+      font-weight: 500;
+      margin-bottom: 25px;
+
+      &::before {
+        content: "";
+        display: block;
+        float: left;
+        height: 40px;
+        width: 20px;
+        background: url("../img/tick.svg") no-repeat;
+        background-size: 100%;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .btn {
+    position: absolute;
+    top: 80%;
+    padding: 10px 40px;
+  }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+  .pricelist {
+    & > ul {
+      flex-direction: column;
+    }
+
+    &__item {
+      flex: 1 0 100%;
+      min-height: 150px;
+    }
+
+    &__features {
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      position: static;
+    }
+  }
+}
