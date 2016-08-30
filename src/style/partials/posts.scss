@@ -20,6 +20,17 @@
 
       background-color: $orange;
     }
+
+    &--blog {
+      background-color: $orange;
+      padding: 90px 4.6875%;
+
+      &:nth-child(2n+1) {
+        order: 2;
+
+        background-color: $blue;
+      }
+    }
   }
 
   &__info {
@@ -30,6 +41,8 @@
 
   &__date {
     margin-right: 40px;
+    font-size: 1.125rem;
+    font-weight: 400;
   }
 
   &__day {
@@ -71,6 +84,16 @@
     color: $white-color;
     text-decoration: none;
     border-left: 3px solid $white-color;
+
+    &--blog {
+      border: none;
+      padding: 0;
+    }
+  }
+
+  &__author {
+    font-size: 1.125rem;
+    font-weight: 400;
   }
 
   &__more {
