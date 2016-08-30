@@ -86,3 +86,25 @@
   }
 
 }
+
+// **************** MEDIA *******************
+@media only screen and (max-width: 768px) {
+  .posts {
+    flex-wrap: wrap;
+
+    &__item {
+      flex: 1 0 50%;
+      order: 2;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .posts {
+    &__item {
+      flex-basis: 100%;
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
+  }
+}
