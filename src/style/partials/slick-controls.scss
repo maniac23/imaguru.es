@@ -34,6 +34,10 @@
   }
 }
 
+.slick-vertical .slick-slide {
+  border: none;
+}
+
 @media only screen and (max-width: 1024px) {
   .slick-dots,
   .slider--right .slick-dots {

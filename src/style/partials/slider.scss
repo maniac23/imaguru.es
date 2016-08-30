@@ -19,7 +19,7 @@
   &__text {
     float: left;
     width: 50%;
-    padding: 75px $section-padding 50px;
+    padding: 60px 10% 50px;
 
     font-weight: 300;
     font-family: Raleway, Arial, sans-serif;
@@ -48,11 +48,16 @@
 
   p {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     padding: 0;
 
     font-size: 1.25rem;
     line-height: 1.2;
+  }
+
+  .btn {
+    margin-top: 25px;
+    margin-bottom: 0;
   }
 
   &--right {
