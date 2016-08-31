@@ -38,6 +38,33 @@
   border: none;
 }
 
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  z-index: 100;
+
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  font-size: 0;
+
+  background: none;
+  border: 2px solid white;
+  border-top: none;
+  border-right: none;
+  outline: none;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.slick-next {
+  left: 95%;
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+
 @media only screen and (max-width: 1024px) {
   .slick-dots,
   .slider--right .slick-dots {
@@ -64,5 +91,29 @@
       margin-right: 10px;
       margin-bottom: 0;
     }
+  }
+
+  .slick-next {
+    left: 93%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .slick-arrow {
+    left: 4%;
+  }
+
+  .slick-next {
+    left: 90%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .slick-arrow {
+    left: 4%;
+  }
+
+  .slick-next {
+    left: 85%;
   }
 }
