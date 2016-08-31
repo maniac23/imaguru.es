@@ -7,4 +7,5 @@
 $(document).ready(function() {
   //= partials/menu.js
   //= partials/slider.js
+  //= partials/show.js
 });
