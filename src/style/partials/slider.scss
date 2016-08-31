@@ -18,19 +18,19 @@
 
   &__text {
     float: left;
-    width: 50%;
-    padding: 60px 10% 50px;
+    width: 45%;
+    padding: 60px 10% 60px;
 
     font-weight: 300;
-    font-family: Raleway, Arial, sans-serif;
+
   }
 
   &__image {
     float: right;
-    width: 50%;
+    width: 55%;
 
     img {
-      max-width: 100%;
+      width: 100%;
       display: block;
     }
   }
@@ -44,15 +44,62 @@
     font-size: 2.5rem;
     line-height: 1.2;
     color: $dark-font-color;
+
+    &--coworking {
+      font-size: 1.875rem;
+      margin-bottom: 15px;
+    }
   }
 
-  p {
+  &__descr {
     margin: 0;
     margin-bottom: 15px;
     padding: 0;
-
     font-size: 1.25rem;
     line-height: 1.2;
+
+    &--coworking {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__benefits {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__benefits-title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &__benefits-item {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background-color: $orange;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  }
+
+  &__more {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
   }
 
   .btn {
