@@ -18,16 +18,24 @@
 
   &__text {
     float: left;
-    width: 45%;
+    width: 50%;
     padding: 60px 10% 60px;
 
     font-weight: 300;
+
+    &--coworking {
+      width: 45%;
+    }
 
   }
 
   &__image {
     float: right;
-    width: 55%;
+    width: 50%;
+
+    &--coworking {
+      width: 55%;
+    }
 
     img {
       width: 100%;

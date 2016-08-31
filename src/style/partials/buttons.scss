@@ -22,6 +22,10 @@
     cursor: pointer;
   }
 
+  &--absolute {
+    position: absolute;
+  }
+
   &--orange {
     color: $orange;
 
