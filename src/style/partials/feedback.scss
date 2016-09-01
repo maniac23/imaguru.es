@@ -46,3 +46,21 @@
     opacity: 0.5;
   }
 }
+
+
+// ****************** MEDIA *********************
+@media only screen and (max-width: 480px) {
+  .feedback {
+    &__list {
+      padding: 0 13.875%;
+    }
+
+    &__item {
+      flex-direction: column;
+    }
+
+    &__avatar {
+      margin-bottom: 30px;
+    }
+  }
+}

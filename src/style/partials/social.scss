@@ -7,6 +7,15 @@
   background-color: $blue;
   min-height: 150px;
 
+  &--fullwidth {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 30px;
@@ -14,6 +23,11 @@
 
     font-weight: 300;
     font-size: 1.875rem;
+
+    &--fullwidth {
+      margin-bottom: 0;
+      margin-right: 80px;
+    }
   }
 
   &__list {
@@ -30,12 +44,31 @@
     display: block;
     width: 60px;
     height: 60px;
-    margin-right: 15px;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
   }
 }
 
 
 // *********** MEDIA **************
+@media only screen and (max-width: 768px) {
+  .social {
+    &--fullwidth {
+      flex-direction: column;
+    }
+
+    &__title {
+      &--fullwidth {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+}
+
 @media only screen and (max-width: 480px) {
   .social {
     padding-top: 30px;
@@ -48,6 +81,11 @@
 
     &__title {
       font-size: 1.5rem;
+
+      &--fullwidth {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
     }
   }
 }

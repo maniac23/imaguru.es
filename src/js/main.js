@@ -9,4 +9,5 @@ $(document).ready(function() {
   //= partials/slider.js
   //= partials/show.js
   //= partials/image-slider.js
+  //= partials/feedback-show.js
 });
