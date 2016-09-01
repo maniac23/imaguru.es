@@ -41,6 +41,32 @@
     display: block;
     margin: 0 auto;
   }
+
+  &__hide {
+    color: $orange;
+    background: none;
+    border: none;
+    font-weight: 600;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      border: 2px solid $orange;
+      position: absolute;
+      left: 50%;
+      top: -50%;
+      transform: translateX(-50%) rotate(45deg);
+      border-right: none;
+      border-bottom: none;
+    }
+  }
 }
 
 
