@@ -1,0 +1,53 @@
+.apply-form {
+  padding: 60px $section-padding;
+
+  background-color: $grey;
+  display: none;
+
+  &::after {
+    content: "";
+
+    display: block;
+    clear: both;
+  }
+
+  &__item {
+    display: block;
+    float: left;
+    width: 30%;
+    margin-right: 4.5%;
+    margin-bottom: 50px;
+    padding: 7px 0;
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba($dark-font-color, 0.3);
+    border-radius: 0;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &--fullwidth {
+      width: 99%;
+    }
+  }
+
+  select {
+    color: rgba($dark-font-color, 0.7);
+  }
+
+  .btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .apply-form {
+    &__item {
+      width: 100%;
+    }
+  }
+}

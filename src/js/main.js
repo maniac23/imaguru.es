@@ -10,4 +10,5 @@ $(document).ready(function() {
   //= partials/show.js
   //= partials/image-slider.js
   //= partials/feedback-show.js
+  //= partials/solutions-form.js
 });
