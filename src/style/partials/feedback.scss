@@ -18,6 +18,14 @@
     text-align: left;
   }
 
+  &__rating {
+    width: 100px;
+    height: 20px;
+    background-image: url("../img/star-filled.svg");
+    background-repeat: repeat-x;
+    margin-bottom: 10px;
+  }
+
   &__item {
     display: flex;
     margin-bottom: 40px;
