@@ -8,6 +8,7 @@
 
   &__slide {
     display: block !important;
+    max-height: 500px;
 
     &::after {
       content: "";
@@ -15,49 +16,28 @@
       display: table;
       clear: both;
     }
+
+    &--high {
+      max-height: 600px;
+    }
   }
 
   &__text {
     float: left;
     width: 50%;
-    padding: 60px 10%;
+    padding: 5% 10%;
 
     font-weight: 300;
-
-    &--coworking {
-      width: 45%;
-    }
-
-    &--startups {
-      width: 45%;
-      padding: 100px 8%;
-    }
-
-    &--developers {
-      width: 45%;
-      padding: 100px 8% 70px;
-    }
   }
 
   &__image {
     float: right;
     width: 50%;
 
-    &--coworking {
-      width: 55%;
-    }
-
-    &--startups {
-      width: 55%;
-    }
-
-    &--developers {
-      width: 55%;
-    }
-
     img {
       display: block;
       width: 100%;
+      max-width: 700px;
     }
   }
 
