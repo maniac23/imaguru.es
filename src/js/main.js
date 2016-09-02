@@ -11,4 +11,5 @@ $(document).ready(function() {
   //= partials/image-slider.js
   //= partials/feedback-show.js
   //= partials/solutions-form.js
+  //= partials/developers-form.js
 });

@@ -24,12 +24,17 @@
     border-bottom: 1px solid rgba($dark-font-color, 0.3);
     border-radius: 0;
 
-    &:nth-child(3n) {
+    &--half {
+      width: 45%;
+      margin-right: 10%;
+    }
+
+    &--nomargin-right {
       margin-right: 0;
     }
 
     &--fullwidth {
-      width: 99%;
+      width: 100%;
     }
   }
 
@@ -40,6 +45,7 @@
   .btn {
     display: block;
     margin: 0 auto;
+    clear: both;
   }
 
   &__hide {
@@ -67,6 +73,56 @@
       border-bottom: none;
     }
   }
+
+  &__wrap {
+    display: block;
+    border-bottom: none;
+
+    & > div {
+      width: 45%;
+      margin-right: 5%;
+      float: left;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+
+  }
+
+  .apply-form__radio {
+    display: none;
+  }
+
+  .apply-form__radio + label {
+    color: $dark-font-color;
+    font-size: 1rem;
+  }
+
+  .apply-form__radio + label span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid ($grey - 15);
+    background-color: $white-color;
+  }
+
+  .apply-form__radio:checked + label span {
+    background-color: $orange;
+    border-color: $orange;
+  }
+
+  .apply-form__radio + label span,
+  .apply-form__radio:checked + label span {
+    transition: all 0.3s ease;
+  }
 }
 
 
@@ -74,6 +130,10 @@
   .apply-form {
     &__item {
       width: 100%;
+
+      &--half {
+        width: 100%;
+      }
     }
   }
 }

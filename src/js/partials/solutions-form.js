@@ -3,7 +3,7 @@
     $('#solutions').slideDown();
   });
 
-  $('.apply-form__hide').click(function(e) {
+  $('#solutions__button').click(function(e) {
     e.preventDefault();
     $('#solutions').slideUp();
   });

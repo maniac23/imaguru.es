@@ -131,17 +131,17 @@
     <form action="none" class="apply-form" id="solutions">
       <input type="text" name="name" placeholder="First name" class="apply-form__item">
       <input type="text" name="surname" placeholder="Last name" class="apply-form__item">
-      <input type="email" name="email" placeholder="Enter your email" class="apply-form__item">
+      <input type="email" name="email" placeholder="Enter your email" class="apply-form__item apply-form__item--nomargin-right">
       <input type="text" name="email" placeholder="When you started" class="apply-form__item">
       <select name="activities" class="apply-form__item">Scope of activities
         <option value="ex1">First activity</option>
         <option value="ex2">Second activity</option>
       </select>
-      <input type="text" placeholder="Deadline (year/month/date)" class="apply-form__item">
+      <input type="text" placeholder="Deadline (year/month/date)" class="apply-form__item apply-form__item--nomargin-right">
       <input type="text" name="description" placeholder="Describe your project and what you need" class="apply-form__item apply-form__item--fullwidth">
       <button class="btn btn--orange-bg" type="submit">Submit</button>
 
-      <button type="button" class="apply-form__hide">Hide</button>
+      <button type="button" class="apply-form__hide" id="solutions__button">Hide</button>
     </form>
     <div class="slider slider--right">
 
@@ -179,7 +179,7 @@
             <li class="slider__benefits-item slider__benefits-item--tick">CSS3</li>
             <li class="slider__benefits-item slider__benefits-item--tick">Vanilla JavaScript</li>
           </ul>
-          <button class="btn btn--orange developer-button">I need a developer</button>
+          <button class="btn btn--orange developers-button">I need a developer</button>
         </div>
       </div>
 
@@ -198,11 +198,41 @@
             <li class="slider__benefits-item slider__benefits-item--tick">CSS3</li>
             <li class="slider__benefits-item slider__benefits-item--tick">Vanilla JavaScript</li>
           </ul>
-          <button  class="btn btn--orange developer-button">I need a developer</button>
+          <button  class="btn btn--orange developers-button">I need a developer</button>
         </div>
       </div>
 
     </div>
+    <form action="none" class="apply-form" id="developer">
+      <input type="text" name="name" placeholder="First name" class="apply-form__item">
+      <input type="text" name="surname" placeholder="Last name" class="apply-form__item apply-form__item__nomargin-right">
+      <input type="email" name="email" placeholder="Enter your email" class="apply-form__item apply-form__item--nomargin-right">
+      <select name="category" class="apply-form__item apply-form__item--half">
+        <option disabled selected>Select a category of work</option>
+        <option value="ex1">Development</option>
+        <option value="ex2">Quality Assurance</option>
+        <option value="ex3">Consultation</option>
+      </select>
+      <input type="text" placeholder="Developer skills" class="apply-form__item apply-form__item--half apply-form__item--nomargin-right">
+      <select name="experience" class="apply-form__item apply-form__item--half">
+        <option disabled selected>Experience</option>
+        <option value="ex1">Junior</option>
+        <option value="ex2">Middle</option>
+        <option value="ex3">Ninja</option>
+      </select>
+      <div class="apply-form__item apply-form__item--half apply-form__item--nomargin-right apply-form__wrap">
+        <div>
+          <input type="radio" id="radio01" name="radio" checked="true" class="apply-form__radio"/>
+          <label for="radio01"><span></span>Outsourse</label>
+        </div>
+        <div>
+          <input type="radio" id="radio02" name="radio" class="apply-form__radio"/>
+          <label for="radio02"><span></span>Join to team</label>
+        </div>
+      </div>
+      <button class="btn btn--orange-bg" type="submit">Submit</button>
+      <button type="button" class="apply-form__hide" id="developers__hide">Hide</button>
+    </form>
     <!--Benefits  -->
     <div class="benefits">
       <h2 class="benefits__title">Our benefits</h2>
