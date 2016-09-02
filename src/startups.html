@@ -279,8 +279,17 @@
            <button  class="btn btn--orange accelerators-button">Apply</button>
          </div>
        </div>
-
      </div>
+     <form action="none" class="apply-form" id="accelerator">
+       <input type="text" name="name" placeholder="Acccelerator name" class="apply-form__item">
+       <input type="email" name="email" placeholder="Enter your email" class="apply-form__item">
+       <input type="text" name="type" placeholder="Type of accelerator" class="apply-form__item apply-form__item--nomargin-right">
+       <input type="text" name="email" placeholder="How many startups did you launch?" class="apply-form__item apply-form__item--half">
+       <input type="text" placeholder="Terms" class="apply-form__item apply-form__item--half apply-form__item--nomargin-right">
+       <button class="btn btn--orange-bg" type="submit">Submit</button>
+
+       <button type="button" class="apply-form__hide" id="accelerator__hide">Hide</button>
+     </form>
     <div class="social social--fullwidth">
       <h2 class="social__title social__title--fullwidth">Find more about us</h2>
       <ul class="social__list">

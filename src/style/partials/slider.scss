@@ -18,7 +18,7 @@
     }
 
     &--high {
-      max-height: 600px;
+      max-height: 650px;
     }
   }
 
@@ -33,6 +33,7 @@
   &__image {
     float: right;
     width: 50%;
+    max-height: 650px;
 
     img {
       display: block;
@@ -151,6 +152,16 @@
     &__text {
       float: none;
       width: 100%;
+    }
+
+    &__image {
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__slide {
+      max-height: inherit;
     }
   }
 }
