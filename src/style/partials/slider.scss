@@ -144,9 +144,21 @@
   }
 }
 
+.tablet {
+  display: none;
+}
+
 // ************ MEDIA **************
 
 @media only screen and (max-width: 1024px) {
+  .desktop {
+    display: none !important;
+  }
+
+  .tablet {
+    display: block;
+  }
+
   .slider {
     &__image,
     &__text {
@@ -155,8 +167,11 @@
     }
 
     &__image {
+      max-height: inherit;
+
       img {
         max-width: 100%;
+        max-height: 500px;
       }
     }
 
@@ -167,10 +182,14 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .slider__text {
-    &--startups,
-    &--developers {
-      padding-top: 60px;
+  .slider {
+    &__text {
+      padding-bottom: 60px;
+
+      &--startups,
+      &--developers {
+        padding-top: 60px;
+      }
     }
   }
 }
