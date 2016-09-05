@@ -19,5 +19,10 @@
     "gulp-watch": "*",
     "imagemin-pngquant": "*",
     "rimraf": "*"
+  },
+  "devDependencies": {
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^6.0.0",
+    "path": "^0.12.7"
   }
 }

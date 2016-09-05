@@ -15,13 +15,19 @@
     <header class="main-header">
       <div class="logo">
         <a href="/" class="logo__link">
-        <img src="img/header-logo.svg" width="180" class="logo__picture" alt="Imaguru">
+        <svg class="logo__picture">
+          <use xlink:href="#header-logo"></use>
+        </svg>
         <span class="logo__subtitle">madrid</span>
         </a>
       </div>
       <!--Menu  -->
-      <div class="search-icon"></div>
-      <div class="menu-icon"></div>
+      <svg class="search-icon">
+        <use xlink:href="#search_icon"></use>
+      </svg>
+      <svg class="menu-icon">
+        <use xlink:href="#menu-icon"></use>
+      </svg>
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item"><a href="#" class="menu__link">For startups</a></li>

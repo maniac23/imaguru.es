@@ -12,6 +12,9 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
+    svgstore = require('gulp-svgstore'),
+    svgmin = require('gulp-svgmin'),
+    gulpPath = require('path'),
     reload = browserSync.reload;
 
 var path = {
@@ -20,20 +23,21 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
-        fonts: 'build/fonts/'
+        fonts: 'build/fonts/',
     },
     src: {
         html: 'src/*.html',
         js: 'src/js/main.js',
         style: 'src/style/main.scss',
-        img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        img: 'src/img/*.*',
+        fonts: 'src/fonts/**/*.*',
+        svg: 'src/img/svg_sprite/*.*',
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.scss',
-        img: 'src/img/**/*.*',
+        img: 'src/img/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     clean: './build'
@@ -103,6 +107,24 @@ gulp.task('image:build', function () {
 gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
+});
+
+gulp.task('svgstore', function () {
+    return gulp
+        .src('src/img/svg_sprite/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = gulpPath.basename(file.relative,  gulpPath.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('src/img'));
 });
 
 gulp.task('build', [

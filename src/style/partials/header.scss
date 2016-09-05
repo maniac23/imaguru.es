@@ -17,6 +17,7 @@
     display: block;
     max-width: 180px;
     height: auto;
+    max-height: 28px;
   }
 
   &__link {
@@ -33,15 +34,10 @@
   display: none;
   width: 20px;
   height: 20px;
-
-  background: transparent url("../img/menu-icon.svg") no-repeat center;
 }
 
 .search-icon {
   margin-right: 10px;
-
-  background: transparent url("../img/search_icon.svg") no-repeat;
-  background-position: 2px 1px;
 
   @extend .menu-icon;
 }
@@ -183,7 +179,7 @@
 
 @media only screen and (max-width: 1024px) {
   .main-header {
-    align-items: flex-start;
+    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
   }
