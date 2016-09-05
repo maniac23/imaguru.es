@@ -92,13 +92,18 @@
 
     vertical-align: top;
 
-    background: transparent url("../img/share.svg") center center no-repeat;
+    background: transparent;
     border: none;
     outline: none;
 
     &:hover {
       cursor: pointer;
     }
+  }
+
+  &__share-img {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -134,6 +139,7 @@
     display: block;
     width: 100%;
     max-width: 380px;
+    max-height: 100px;
     margin: 0 auto;
     margin-bottom: 40px;
   }
@@ -201,7 +207,6 @@
 
     flex-basis: 25%;
     margin-bottom: 20px;
-    padding-top: 80px;
 
     opacity: 0.5;
 
@@ -220,38 +225,46 @@
       color: $white-color;
       text-decoration: none;
     }
+    //
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 50%;
+    //
+    //   display: block;
+    //   width: 64px;
+    //   height: 64px;
+    //
+    //   background: url("../img/tech_icon.svg") no-repeat;
+    //   transform: translateX(-50%);
+    // }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
+    // &--learn {
+    //   &::before {
+    //     background: url("../img/code_icon.svg") no-repeat;
+    //   }
+    // }
 
-      display: block;
-      width: 64px;
-      height: 64px;
+    // &--cowork {
+    //   &::before {
+    //     background: url("../img/cowork_icon.svg") no-repeat;
+    //   }
+    // }
 
-      background: url("../img/tech_icon.svg") no-repeat;
-      transform: translateX(-50%);
-    }
+    // &--join {
+    //   &::before {
+    //     background: url("../img/events_icon.svg") no-repeat;
+    //   }
+    // }
+  }
 
-    &--learn {
-      &::before {
-        background: url("../img/code_icon.svg") no-repeat;
-      }
-    }
-
-    &--cowork {
-      &::before {
-        background: url("../img/cowork_icon.svg") no-repeat;
-      }
-    }
-
-    &--join {
-      &::before {
-        background: url("../img/events_icon.svg") no-repeat;
-      }
-    }
+  &__icon {
+    max-width: 80px;
+    max-height: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 
