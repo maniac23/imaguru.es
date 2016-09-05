@@ -36,6 +36,7 @@
 
   &--corners {
     padding-top: 80px;
+    padding-bottom: 80px;
 
     &::before {
       content: "";
@@ -69,6 +70,10 @@
 
   &--yellow {
     background-color: $yellow;
+  }
+
+  &--blue {
+    background-color: $blue;
   }
 
   &--move {
@@ -165,6 +170,36 @@
       font-size: 5.25rem;
       text-align: center;
     }
+
+    &--cite {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin: 0;
+      padding: 10px 0;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: -15%;
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: 0;
+        border-top: 50px solid transparent;
+        border-left: 100px solid $orange;
+        border-bottom: 50px solid transparent;
+      }
+    }
+  }
+
+  &__wrap {
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__image {
@@ -266,7 +301,8 @@
       min-height: 500px;
     }
 
-    &--yellow {
+    &--yellow,
+    &--blue {
       min-height: 600px;
     }
 
