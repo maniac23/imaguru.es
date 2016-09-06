@@ -25,6 +25,7 @@
   flex-basis: 50%;
   flex-direction: row;
   flex-wrap: wrap;
+  height: 100%;
   min-height: 350px;
   padding: 50px 9.375% 130px;
 
@@ -35,8 +36,8 @@
   background-color: $orange;
 
   &--corners {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     &::before {
       content: "";
@@ -70,6 +71,7 @@
 
   &--yellow {
     background-color: $yellow;
+    padding-bottom: 60px;
   }
 
   &--blue {
@@ -163,6 +165,7 @@
       font-weight: 700;
       font-size: 3.5rem;
       text-align: center;
+      margin-bottom: 0;
     }
 
     &--price {
@@ -188,7 +191,7 @@
         transform: translateY(-50%);
         bottom: 0;
         border-top: 50px solid transparent;
-        border-left: 100px solid $orange;
+        border-left: 50px solid $orange;
         border-bottom: 50px solid transparent;
       }
     }
@@ -266,7 +269,7 @@
   }
 
   .btn {
-    bottom: 15.2%;
+    bottom: 10%;
 
     margin-top: 20px;
   }
@@ -278,6 +281,12 @@
     &__descr {
       &--sale {
         font-size: 3rem;
+      }
+
+      &--cite {
+        &::after {
+          right: -20%;
+        }
       }
 
       &--price {
@@ -308,7 +317,9 @@
 
     &--corners {
       min-height: 450px;
+      padding-top: 80px;
     }
+
   }
 }
 
@@ -325,7 +336,7 @@
     }
 
     &--corners {
-      min-height: 550px;
+      min-height: inherit;
 
       &::before {
         border-right: 100px solid transparent;
@@ -343,5 +354,28 @@
         border-left: 100px solid transparent;
       }
     }
+
+    &--yellow,
+    &--blue {
+      min-height: 600px;
+    }
+
+    &__date,
+    &__price,
+    &__descr {
+      margin-bottom: 30px;
+    }
+
+    &__descr {
+      &--cite {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__wrap {
+    width: 80%;
   }
 }
