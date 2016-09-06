@@ -8,6 +8,29 @@
 
   background-color: $grey;
 
+  &--orange {
+    background-color: $orange;
+    color: $white-color;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+      margin-bottom: 30px;
+      font-size: 1.875rem;
+      font-weight: 300;
+    }
+
+    .subscribe__form {
+      width: 100%;
+
+      input {
+        color: $white-color;
+        opacity: 1;
+        border-bottom: 2px solid $white-color;
+      }
+    }
+  }
+
   &__text {
     flex: 1 0 50%;
     margin: 0;
@@ -51,6 +74,15 @@
   .subscribe {
     flex-direction: column;
     min-height: 280px;
+
+    &--orange {
+      min-height: 350px;
+
+      .subscribe__text {
+        margin: 0;
+        margin-bottom: 30px;
+      }
+    }
 
     &__text {
       margin-bottom: 40px;

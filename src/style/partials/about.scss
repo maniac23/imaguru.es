@@ -9,6 +9,12 @@
     flex: 1 0 50%;
     flex-direction: column;
   }
+
+  &__left {
+    &--orange {
+      background-color: $orange;
+    }
+  }
 }
 
 // ******** MEDIA *********
