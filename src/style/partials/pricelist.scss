@@ -1,13 +1,19 @@
 .pricelist {
   & > ul {
-    display: flex;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: block;
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
   }
+  // размеры задаются плагином слайдера slick carousel
 
   &__item {
-    flex: 1 1 33.33%;
     padding: 40px 7.8125%;
     text-align: left;
     position: relative;
@@ -67,19 +73,16 @@
     padding: 10px 40px;
   }
 
+  .slick-arrow {
+    border-color: $dark-font-color;
+    opacity: 0.6;
+  }
+
 }
 
 
 @media only screen and (max-width: 800px) {
   .pricelist {
-    & > ul {
-      flex-direction: column;
-    }
-
-    &__item {
-      flex: 1 0 100%;
-      min-height: 450px;
-    }
 
     &__features {
       margin-bottom: 40px;

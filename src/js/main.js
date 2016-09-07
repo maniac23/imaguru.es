@@ -9,6 +9,7 @@ $(document).ready(function() {
   //= partials/slider.js
   //= partials/show.js
   //= partials/image-slider.js
+  //= partials/pricelist-slider.js
   //= partials/feedback-show.js
   //= partials/solutions-form.js
   //= partials/developers-form.js
