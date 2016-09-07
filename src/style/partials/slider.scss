@@ -172,6 +172,10 @@
       }
     }
 
+    &__text {
+      min-height: 400px;
+    }
+
     &__slide {
       max-height: inherit;
     }
