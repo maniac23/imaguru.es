@@ -22,6 +22,12 @@
     min-height: 450px;
   }
 
+  &--fe-courses {
+    background: url("../img/fe-courses_bg.jpg") center;
+    background-size: cover;
+    min-height: 450px;
+    padding-bottom: 1px;
+  }
 }
 
 .info {
@@ -122,6 +128,14 @@
   text-align: center;
   color: #ffffff;
 
+  &--course-promo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0;
+  }
+
   &__title {
     margin: 0;
     padding: 0;
@@ -130,6 +144,16 @@
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 12%;
+  }
+
+  &__course-title {
+    font-weight: 400;
+    font-size: 1.875rem;
+  }
+
+  &__course-paragraph {
+    font-size: 1.5rem;
+    font-weight: 300;
   }
 
   &__subtitle {
@@ -180,6 +204,7 @@
     display: flex;
     justify-content: space-between;
   }
+
 }
 
 .features {
