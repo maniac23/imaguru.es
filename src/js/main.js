@@ -16,4 +16,5 @@ $(document).ready(function() {
   //= partials/developers-form.js
   //= partials/accelerator-form.js
   //= partials/main-text__slider.js
+  //= partials/events-gallery.js
 });
