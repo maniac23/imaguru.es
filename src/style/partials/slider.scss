@@ -150,6 +150,7 @@
 @media only screen and (max-width: 1024px) {
   .desktop {
     display: none !important;
+    max-height: 300px;
   }
 
   .tablet {
@@ -186,6 +187,7 @@
   .slider {
     &__text {
       padding-bottom: 60px;
+      min-height: inherit;
 
       &--startups,
       &--developers {
