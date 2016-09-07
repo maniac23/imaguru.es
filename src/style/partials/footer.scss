@@ -103,7 +103,7 @@
 
 // ******** MEDIA *************
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
   .main-footer {
     flex-direction: column;
     justify-content: center;
@@ -116,14 +116,6 @@
   .footer-form input {
     width: 100%;
   }
-
-  .footer-form .btn {
-    font-size: 1rem;
-  }
-
-  .footer-menu__link {
-    font-size: 1.2rem;
-  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -131,5 +123,13 @@
     &__title {
       font-size: 1.8rem;
     }
+  }
+
+  .footer-form .btn {
+    font-size: 1rem;
+  }
+
+  .footer-menu__link {
+    font-size: 1.2rem;
   }
 }
