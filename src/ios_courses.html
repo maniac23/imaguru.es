@@ -21,57 +21,16 @@
 			</div>
 
 			<div class="main-text main-text--course-promo">
-				<h2 class="main-text__course-title">Learn to code with Imaguru</h2>
-				<p class="main-text__course-paragraph">8 weeks course: Mon-Fri, 3 hours per day</p>
+				<h2 class="main-text__course-title">iOS Development course</h2>
+				<p class="main-text__course-paragraph">6 weeks course: Mon-Fri, 3 hours per day</p>
 			</div>
 		</div>
 <!-- row -->
 		<div class="row">
-			<div class="content-block content-block--grey course-registration course-registration--two-parts">
-				<h2 class="content-block__title course-registration__title">Choose level you want to apply:</h2>
+			<div class="content-block content-block--grey course-registration course-registration--one-part">
 				<form action="#">
-					<label class="course-registration__label">
-						<input type="checkbox" class="whole-courses" name="whole">
-						<span class="replace-checkbox"></span>
-						<span>The whole course. Save 200 EURO!</span>
-					</label>
-					<div class="label-wrapper">
-						<label class="course-registration__label">
-							<span class="course-registration__label__title">0s (200 eur)</span>
-							<input type="checkbox" class="edu-level edu-level--os" name="level_os" data-price="200">
-							<span class="replace-checkbox"></span>
-							<span class="stripe stripe--os"></span>
-						</label>
-
-						<label class="course-registration__label">
-							<span class="course-registration__label__title">Beginner (250 eur)</span>
-							<input type="checkbox" class="edu-level edu-level--beginner" name="level_beginner" data-price="250">
-							<span class="replace-checkbox"></span>
-							<span class="stripe stripe--beginner"></span>
-						</label>
-
-						<label class="course-registration__label">
-							<span class="course-registration__label__title">Mid (300 eur)</span>
-							<input type="checkbox" class="edu-level edu-level--mid" name="level--mid" data-price="300">
-							<span class="replace-checkbox"></span>
-							<span class="stripe stripe--mid"></span>
-						</label>
-
-						<label class="course-registration__label">
-							<span class="course-registration__label__title">Advanced (250 eur)</span>
-							<input type="checkbox" class="edu-level edu-level--adv" name="level_adv" data-price="250">
-							<span class="replace-checkbox"></span>
-							<span class="stripe stripe--adv"></span>
-						</label>
-					</div>
-					<div class="course-registration__total-wrapper">
-						<span class="course-registration__total">Total: <span class="course-registration__total__count">0 eur</span></span>
-						<span class="btn btn--orange course-registration__continue">Register</span>
-
-					</div>
-
 						<!-- FORM SECOD PART -->
-					<div class="course-registration__second-part hidden absolute">
+					<div class="course-registration__second-part">
 						<div class="course-registration__second-part__check-date">
 
 							<label>
@@ -121,11 +80,9 @@
 						</div>
 
 						<div class="course-registration__total-wrapper">
-							<span class="course-registration__total"><span class="course-registration__total__count">750 eur</span></span>
+							<span class="course-registration__total"><span class="course-registration__total__count" data-base-price="650">650 eur</span></span>
 							<button type='submit' class="btn btn--orange course-registration__submit">Register</button>
 						</div>
-
-						<span class="course-registration__second-part__close-button"></span>
 					</div>
 
 				</form>
@@ -140,11 +97,15 @@
 			</div>
 
 		</div>
+
+	<section class="about-classes">
+		<p>Learn how your classes are held in our <a href="#">Blog</a></p>
+	</section>
+
 <!-- program -->
-<section class="course-programm">
+<section class="course-programm light-grey-bg">
 	<h3 class="course-programm__title">
-		8 weeks course:<br />
-		<span>Mon-Fri, 3 hours per day</span>
+		You’ll learn<br />
 	</h3>
 	<article class="course-programm__article course-programm__article--os">
 		<div class="course-programm__article__title">
@@ -176,7 +137,7 @@
 	</article>
 </section>
 <!-- teachers -->
-<section class="course-teachers light-grey-bg">
+<section class="course-teachers">
 	<h3 class="course-teachers__title">About teachers</h3>
 	<article class="course-teachers__article">
 		<div class="course-teachers__article__portrait">
@@ -202,9 +163,6 @@
 </section>
 <!--  -->
 
-<section class="about-classes">
-	<p>Learn how your classes are held in our <a href="#">Blog</a></p>
-</section>
 <!--BLOG  -->
 		<div class="posts">
 			<div class="preview preview--blog">
@@ -373,10 +331,5 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-
 
 	//= template/footer.html

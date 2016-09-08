@@ -1,13 +1,13 @@
 .course-registration {
 	color: $dark-font-color;
 	position: relative;
-	padding: 3rem 5rem;
+	padding: 3rem 5rem 0;
 	&__title {
 		font-size: 1.8rem;
 	}
 
 	&__total-wrapper {
-		margin-top: 2.5rem;
+		margin-top: 1rem;
 		text-align: center;
 		&:after {
 			content: '';
@@ -31,7 +31,7 @@
 			color: $orange;
 		}
 	}
-	& &__continue,,
+	& &__continue,
 	& &__submit {
 		display: inline-block;
 	}
@@ -101,21 +101,29 @@
 			}
 		}
 	}
-	.btn {
-		bottom: 2rem;
-		right: 2rem;
+
+	&--one-part {
+		padding: 3rem;
+		padding-bottom: 1rem;
+		.course-registration__second-part {
+		}
 	}
+
+	&--two-parts {
+		padding-bottom: 1rem;
+		.course-registration__second-part {
+			position: absolute;
+			z-index: 20;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			padding: 3rem 4rem 0 5rem;
+			background-color: #fff;
+		}
+	}
+
 	&__second-part {
-		position: absolute;
-		z-index: 20;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-
-		padding: 3rem 4rem 0 5rem;
-
-		background-color: #fff;
 
 		.replace-radio {
 			display: inline-block;
@@ -138,20 +146,16 @@
 		}
 
 		&__check-date {
-
-			margin-bottom: 3rem;
-
+			margin-bottom: 2rem;
 			label {
 				display: block;
-				float: left;
 				cursor: pointer;
-				min-width: 50%;
 				white-space: nowrap;
 				.text {
-					font-size: 1.4em;
+					font-size: 1.2em;
 					white-space: nowrap;
+					line-height: 1.7;
 				}
-
 			}
 			&:after {
 				content: '';
@@ -160,16 +164,15 @@
 			}
 		}
 
-
 		&__text-info {
-
 			input {
 				display: block;
+				background-color: inherit;
 				width: 100%;
 				border: none;
 				border-bottom: .08rem solid $grey;
-				padding-bottom: .6rem;
-				margin-bottom: 2rem;
+				padding-bottom: .5rem;
+				margin-bottom: 1.8rem;
 				&:focus {
 					border-color: $orange;
 				}
@@ -181,8 +184,8 @@
 			label {
 				display: block;
 				float: left;
-				width: 50%;
-				padding: 1rem 0 0 .5rem;
+				width: 100%;
+				padding: .8rem 0 0 0;
 				cursor: pointer;
 				.text {
 					display: inline-block;
@@ -202,8 +205,6 @@
 				clear: both;
 			}
 		}
-
-
 
 		&__close-button {
 			position: absolute;
@@ -246,6 +247,22 @@
 only screen and (min-width: 540px) and (max-width: 768px) {
 	.course-registration {
 
+		&__second-part {
+			.course-registration__total-wrapper {
+				margin-top: 2.5rem;
+			}
+			&__check-date {
+				label {
+					width: 50%;
+					float: left;
+				}
+			}
+			&__payment {
+				label {
+					width: 50%;
+				}
+			}
+		}
 
 		&__total {
 			width: auto;
