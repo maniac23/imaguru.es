@@ -72,7 +72,9 @@
     background-color: $yellow;
     padding-bottom: 60px;
   }
-
+  &--grey {
+    background-color: $grey-content;
+  }
   &--blue {
     background-color: $blue;
   }

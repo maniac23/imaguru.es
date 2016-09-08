@@ -14,4 +14,5 @@ $(document).ready(function() {
   //= partials/solutions-form.js
   //= partials/developers-form.js
   //= partials/accelerator-form.js
+  //= partials/course-registration-form.js
 });

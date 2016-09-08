@@ -27,23 +27,124 @@
 		</div>
 <!-- row -->
 		<div class="row">
-			<div class="content-block content-block--yellow">
-				<h2 class="content-block__title">iOS developer</h2>
-				<p class="content-block__date">Feb, 1 - Apr, 3</p>
-				<p class="content-block__price">399 eur</p>
-				<p class="content-block__descr content-block__descr--academy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dignissimos illum eos vero vitae dicta saepe non asperiores praesentium voluptatibus.</p>
-				<a href="#" class="btn btn--absolute">Learn more</a>
+			<div class="content-block content-block--grey course-registration">
+				<h2 class="content-block__title course-registration__title">Choose level you want to apply:</h2>
+				<form action="#">
+					<label class="course-registration__label">
+						<input type="checkbox" class="whole-courses" name="whole">
+						<span class="replace-checkbox"></span>
+						<span>The whole course. Save 200 EURO!</span>
+					</label>
+					<div class="label-wrapper">
+						<label class="course-registration__label">
+							<span class="course-registration__label__title">0s (200 eur)</span>
+							<input type="checkbox" class="edu-level edu-level--os" name="level_os" data-price="200">
+							<span class="replace-checkbox"></span>
+							<span class="stripe stripe--os"></span>
+						</label>
+
+						<label class="course-registration__label">
+							<span class="course-registration__label__title">Beginner (250 eur)</span>
+							<input type="checkbox" class="edu-level edu-level--beginner" name="level_beginner" data-price="250">
+							<span class="replace-checkbox"></span>
+							<span class="stripe stripe--beginner"></span>
+						</label>
+
+						<label class="course-registration__label">
+							<span class="course-registration__label__title">Mid (300 eur)</span>
+							<input type="checkbox" class="edu-level edu-level--mid" name="level--mid" data-price="300">
+							<span class="replace-checkbox"></span>
+							<span class="stripe stripe--mid"></span>
+						</label>
+
+						<label class="course-registration__label">
+							<span class="course-registration__label__title">Advanced (250 eur)</span>
+							<input type="checkbox" class="edu-level edu-level--adv" name="level_adv" data-price="250">
+							<span class="replace-checkbox"></span>
+							<span class="stripe stripe--adv"></span>
+						</label>
+					</div>
+					<div class="course-registration__total-wrapper">
+						<span class="course-registration__total">Total: <span class="course-registration__total__count">0 eur</span></span>
+						<span class="btn btn--orange course-registration__continue">Register</span>
+
+					</div>
+
+						<!-- FORM SECOD PART -->
+					<div class="course-registration__second-part hidden">
+						<div class="course-registration__second-part__check-date">
+
+							<label>
+								<input type="radio" value="feb-apr" name="date_of_courses" checked>
+								<span class="replace-radio"></span>
+								<span class="text">Feb, 1 - Apr, 3</span>
+							</label>
+
+							<label>
+								<input type="radio" value="may-jul" name="date_of_courses">
+								<span class="replace-radio"></span>
+								<span class="text">May, 1 - Jul, 30</span>
+							</label>
+						</div>
+
+						<div class="course-registration__second-part__text-info">
+							<input type="text" placeholder="Name/Last Name" required>
+							<input type="tel" placeholder="Phone number" required>
+							<input type="email" placeholder="Email address" required>
+						</div>
+
+						<div class="course-registration__second-part__payment">
+							<label>
+								<input type="radio" class="adv-payment" value="advance" name="payment" data-discount="10">
+								<span class="replace-radio"></span>
+								<span class="text">Advance payment</span>
+								<span class="discount">10% discount</span>
+							</label>
+							<label>
+								<input type="radio" value="2 installments" name="payment" data-discount="5">
+								<span class="replace-radio"></span>
+								<span class="text">Payment in 2 installments</span>
+								<span class="discount">5% discount</span>
+							</label>
+							<label>
+								<input type="radio" value="3 installments" name="payment" data-comission='0'>
+								<span class="replace-radio"></span>
+								<span class="text">Payment in 3 installments</span>
+								<span class="discount">0% comission</span>
+							</label>
+							<label>
+								<input type="radio" value="later" name="payment" checked>
+								<span class="replace-radio"></span>
+								<span class="text">I will decide later</span>
+								<span class="discount"></span>
+							</label>
+						</div>
+
+						<div class="course-registration__total-wrapper">
+							<span class="course-registration__total"><span class="course-registration__total__count">750 eur</span></span>
+							<button type='submit' class="btn btn--orange course-registration__submit">Register</button>
+						</div>
+
+						<span class="course-registration__second-part__close-button"></span>
+					</div>
+
+				</form>
+
 			</div>
+
 			<div class="content-block content-block--corners">
-				<p class="content-block__descr content-block__descr--sale">Register until January, 20</p>
-				<p class="content-block__descr content-block__descr--price">and get <br>50% off</p>
+				<div class="content-block__descr-wrapper">
+					<p class="content-block__descr content-block__descr--sale">Register until January, 20</p>
+					<p class="content-block__descr content-block__descr--price">and get <br>50% off</p>
+				</div>
 			</div>
+
 		</div>
 <!-- program -->
 <section class="course-programm">
 	<h3 class="course-programm__title">
 		8 weeks course:<br />
-		Mn-Fri, 3 hours per day
+		<span>Mon-Fri, 3 hours per day</span>
 	</h3>
 	<article class="course-programm__article course-programm__article--os">
 		<div class="course-programm__article__title">
@@ -75,8 +176,34 @@
 	</article>
 </section>
 <!-- teachers -->
-<section class="teachers">
-	
+<section class="course-teachers">
+	<h3 class="course-teachers__title">About teachers</h3>
+	<article class="course-teachers__article">
+		<div class="course-teachers__article__portrait">
+			<img src="img/teacher_avatar_1.jpg" alt="">
+		</div>
+		<span class="course-teachers__article__name">Chuck Norris</span>
+		<p class="course-teachers__article__dscr">Marco Stubits will talk about expectations, communication and business trip behavior tips while working directly with US clients. Marco – CEO at Specific-Group USA. 11 years of experience in cross country business coordination. 5 years doing IT-business in USA.</p>
+	</article>
+	<article class="course-teachers__article">
+		<div class="course-teachers__article__portrait">
+			<img src="img/teacher_avatar_2.jpg" alt="">
+		</div>
+		<span class="course-teachers__article__name">Jason Statham</span>
+		<p class="course-teachers__article__dscr">Alex Short will talk what to expect from the Belarusian IT specialists start-ups, where they come to us, what attitude you can face what is expected from you and what you should expect, the business processes in start-ups, management in startups. Alex - 10 in IT, 5 years in the PM, the last year working with stratapami. I love working with people and ideas.</p>
+	</article>
+	<article class="course-teachers__article">
+		<div class="course-teachers__article__portrait">
+			<img src="img/teacher_avatar_3.jpg" alt="">
+		</div>
+		<span class="course-teachers__article__name">Luke Skywalker</span>
+		<p class="course-teachers__article__dscr">Alex Short will talk what to expect from the Belarusian IT specialists start-ups, where they come to us, what attitude you can face what is expected from you and what you should expect, the business processes in start-ups, management in startups. Alex - 10 in IT, 5 years in the PM, the last year working with stratapami. I love working with people and idea</p>
+	</article>
+</section>
+<!--  -->
+
+<section class="about-classes">
+	<p>Learn how your classes are held in our <a href="#">Blog</a></p>
 </section>
 <!--BLOG  -->
 		<div class="posts">

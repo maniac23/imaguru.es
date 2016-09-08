@@ -1,0 +1,263 @@
+.course-registration {
+	color: $dark-font-color;
+	position: relative;
+	padding: 3rem 5rem;
+	&__title {
+		font-size: 1.8rem;
+	}
+
+	&__total-wrapper {
+		margin-top: 2.5rem;
+		text-align: center;
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+
+	&__total {
+		font-size: 1rem;
+		vertical-align: middle;
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 1rem;
+
+		&__count {
+			font-size: 2em;
+			position: relative;
+			top: .2em;
+			margin-left: .25em;
+			color: $orange;
+		}
+	}
+	& &__continue,,
+	& &__submit {
+		display: inline-block;
+	}
+	.label-wrapper {
+		padding-left: 2rem;
+		.course-registration__label {
+			&__title {
+				margin-left: 1.8em;
+			}
+		}
+	}
+
+	&__label {
+		display: block;
+		margin-bottom: 2rem;
+		cursor: pointer;
+		white-space: nowrap;
+		overflow: hidden;
+		span,
+		.replace-checkbox {
+			vertical-align: middle;
+		}
+
+		.replace-checkbox {
+			display: inline-block;
+			height: 1em;
+			width: 1em;
+			border-radius: .1em;
+			margin-right: .5rem;
+			border: 1px solid #aaa;
+			background-color:#fff;
+		}
+
+		input[type="checkbox"] {
+			display: none;
+		}
+
+		input[type="checkbox"]:checked ~ .replace-checkbox {
+			background: url(../img/checkbox_bg.png) no-repeat center center;
+			background-size: contain;
+		}
+
+		&__title {
+			display: block;
+			margin-bottom: .5rem;
+		}
+
+		.stripe {
+			display: inline-block;
+			height: 1em;
+			background-color: red;
+			&--os {
+				background-color: $level-os;
+				width: 20%;
+			}
+			&--beginner {
+				background-color: $level-beginner;
+				width: 40%;
+			}
+			&--mid {
+				background-color: $level-mid;
+				width: 60%;
+			}
+			&--adv {
+				background-color: $level-adv;
+				width: 100%;
+			}
+		}
+	}
+	.btn {
+		bottom: 2rem;
+		right: 2rem;
+	}
+	&__second-part {
+		position: absolute;
+		z-index: 20;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+
+		padding: 3rem 4rem 0 5rem;
+
+		background-color: #fff;
+
+		.replace-radio {
+			display: inline-block;
+			height: 1em;
+			width: 1em;
+			border-radius: .1em;
+			margin-right: .5rem;
+			border: 1px solid #aaa;
+			background-color:#fff;
+			border-radius: 50%;
+		}
+
+		input[type="radio"] {
+			display: none;
+		}
+
+		input[type="radio"]:checked ~ .replace-radio {
+			background-color: $orange;
+			border-color: $orange;
+		}
+
+		&__check-date {
+
+			margin-bottom: 3rem;
+
+			label {
+				display: block;
+				float: left;
+				cursor: pointer;
+				min-width: 50%;
+				white-space: nowrap;
+				.text {
+					font-size: 1.4em;
+					white-space: nowrap;
+				}
+
+			}
+			&:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+		}
+
+
+		&__text-info {
+
+			input {
+				display: block;
+				width: 100%;
+				border: none;
+				border-bottom: .08rem solid $grey;
+				padding-bottom: .6rem;
+				margin-bottom: 2rem;
+				&:focus {
+					border-color: $orange;
+				}
+			}
+		}
+
+		&__payment {
+
+			label {
+				display: block;
+				float: left;
+				width: 50%;
+				padding: 1rem 0 0 .5rem;
+				cursor: pointer;
+				.text {
+					display: inline-block;
+					width: calc(100% - 2em);
+					vertical-align: top;
+				}
+				.discount {
+					display: block;
+					color: #ababab;
+					padding-left: 1.7em;
+				}
+			}
+
+			&:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+		}
+
+
+
+		&__close-button {
+			position: absolute;
+			width: 2rem;
+			height: 2rem;
+			top: 1rem;
+			right: 1rem;
+			cursor: pointer;
+			transition: transform .1s;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+
+			&:after,
+			&:before {
+				content: '';
+				display: block;
+				background-color: #000;
+				position: absolute;
+				top: 50%;
+				width: 100%;
+				height: .1rem;
+				margin-top: -.05rem;
+				transform-origin: 50% 50%;
+			}
+
+			&:after {
+				transform: rotateZ(45deg)
+			}
+
+			&:before {
+				transform: rotateZ(-45deg)
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1040px),
+only screen and (min-width: 540px) and (max-width: 768px) {
+	.course-registration {
+
+
+		&__total {
+			width: auto;
+			display: inline-block;
+			float: left;
+		}
+
+		& &__continue,
+		& &__submit {
+			margin: 0;
+			float: right;
+		}
+	}
+
+}
