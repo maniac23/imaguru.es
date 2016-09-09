@@ -168,13 +168,15 @@
 			input {
 				display: block;
 				background-color: inherit;
-				width: 100%;
+				width: 80%;
 				border: none;
 				border-bottom: .08rem solid $grey;
 				padding-bottom: .5rem;
 				margin-bottom: 1.8rem;
+				transition: width .2s;
 				&:focus {
 					border-color: $orange;
+					width: 100%;
 				}
 			}
 		}
