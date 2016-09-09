@@ -7,7 +7,7 @@
 		font-weight: 400;
 		text-align: center;
 		font-size: 1.5rem;
-		margin: 0 auto;
+		margin: 0 auto 1.2rem;
 		span {
 			font-weight: 300;
 		}
@@ -39,7 +39,8 @@
 
 			h6 {
 				font-size: 1rem;
-				margin: 1em 0 1.5em;
+				margin: 1em 0 2em;
+				text-align: center;
 			}
 
 			p {
@@ -49,10 +50,10 @@
 			}
 
 			ul {
-				padding-left: 1rem	;
+				padding-left: 1rem;
 				list-style: none;
 				li {
-					margin-bottom: 1.5em;
+					margin-bottom: 2.2em;
 					&:before {
 						content: '';
 						display: inline-block;
@@ -91,9 +92,11 @@
 			display: inline-block;
 			width: calc(50% - .2em);
 			vertical-align: top;
-			&__title {
-				min-height: 5.9rem;
-				margin-bottom: 1.3rem;
+
+			&__paragraph {
+				h6 {
+					text-align: left;
+				}
 			}
 		}
 

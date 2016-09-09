@@ -15,4 +15,5 @@ $(document).ready(function() {
   //= partials/developers-form.js
   //= partials/accelerator-form.js
   //= partials/course-registration-form.js
+  //= partials/equal-height.js
 });
