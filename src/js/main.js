@@ -20,4 +20,5 @@ $(document).ready(function() {
     //= partials/timetable-slider.js
     //= partials/events-gallery.js
     //= partials/filter.js
+    //= partials/team-show.js
 });
