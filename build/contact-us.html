@@ -55,20 +55,25 @@
 
 	<div class="wrapper">
 		<div class="promo promo--contact-us">
-			<div class="info">
-				<div class="info__left">
-					<div class="info__adress">Startup hub in Madrid</div>
-				</div>
-				<div class="info__right">
-					<a href="mailto:info@imaguru.es" class="info__mail">info@imaguru.es</a>
-					<button class="info__share">
-						<svg class="info__share-img">
-							<use xlink:href="#share"></use>
-						</svg>
-					</button>
+			<iframe class='promo__video-iframe hidden' width="560" height="315" src="https://www.youtube.com/embed/ryzOkFo7iAM?rel=0" frameborder="0" allowfullscreen></iframe>
+			<div class="promo__shadow--video promo__shadow">
+				<div class="promo__shadow__video-button"></div>
+
+				<div class="info">
+					<div class="info__left">
+						<div class="info__adress">Startup hub in Madrid</div>
+					</div>
+					<div class="info__right">
+						<a href="mailto:info@imaguru.es" class="info__mail">info@imaguru.es</a>
+						<button class="info__share">
+							<svg class="info__share-img">
+								<use xlink:href="#share"></use>
+							</svg>
+						</button>
+					</div>
 				</div>
 			</div>
-			
+			<!-- iframe-video -->
 		</div>
 
 <!-- any-questions -->
@@ -84,17 +89,17 @@
 	</article>
 	<article class="any-questions__article">
 		<div class="any-questions__article__portrait">
-			<img src="img/tania_marinich.jpg" alt="">
+			<img src="img/nastia_khamiankova.jpg" alt="">
 		</div>
-		<span class="any-questions__article__name">Tania Marinich</span>
+		<span class="any-questions__article__name">Nastia Khamiankova</span>
 		<span class="any-questions__article__role">Co-Founder</span>
 		<div class="any-questions__article__dscr"><a href="#">write to me</a> if yuo are something</div>
 	</article>
 	<article class="any-questions__article">
 		<div class="any-questions__article__portrait">
-			<img src="img/tania_marinich.jpg" alt="">
+			<img src="img/george_clingan.jpg" alt="">
 		</div>
-		<span class="any-questions__article__name">Tania Marinich</span>
+		<span class="any-questions__article__name">George Clingan.jpg</span>
 		<span class="any-questions__article__role">Co-Founder</span>
 		<div class="any-questions__article__dscr"><a href="#">write to me</a> if yuo are something</div>
 	</article>
@@ -103,7 +108,7 @@
 <!-- LETS keep in touch -->
 		<section class = 'lets-keep-in-touch flex-container-50-50'>
 			<div class="lets-keep-in-touch__map flex-elements-50-50">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.777724021923!2d-3.7222183553145403!3d40.41377464811365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42280b3ae74b6d%3A0xf4d3282c331c963b!2sR%C3%ADo+Creative+Art+Center+Escuela+de+Arte!5e0!3m2!1sru!2sby!4v1473428349245" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.777724021923!2d-3.7222183553145403!3d40.41377464811365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42280b3ae74b6d%3A0xf4d3282c331c963b!2sR%C3%ADo+Creative+Art+Center+Escuela+de+Arte!5e0!3m2!1sru!2sby!4v1473428349245" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 			</div>
 			<div class="lets-keep-in-touch__about flex-elements-50-50">
 				<!--Contact form -->
@@ -168,35 +173,33 @@
 
 		</div>
 
-
-
-
-	<footer class="main-footer">
-	  <div class="main-footer__left">
-	    <form class="footer-form">
-	      <h3 class="footer-form__title">Stay updated</h3>
-	      <input type="email" class="footer-form__input" placeholder="Enter your email" required>
-	      <button type="submit" class="btn ">Subscribe</button>
-	    </form>
-	  </div>
-	  <div class="main-footer__right">
-	    <nav class="footer-menu">
-	      <ul class="footer-menu__list">
-	        <li class="footer-menu__item"><a href="#" class="footer-menu__link">About us</a></li>
-	        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Coworking</a></li>
-	        <li class="footer-menu__item"><a href="#" class="footer-menu__link">IT classes</a></li>
-	        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Events</a></li>
-	        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Blog</a></li>
-	      </ul>
-	    </nav>
-	    <ul class="footer-social">
-	      <li class="footer-social__item"><a href="#">Twitter</a></li>
-	      <li class="footer-social__item"><a href="#">Facebook</a></li>
-	      <li class="footer-social__item"><a href="#">Instagram</a></li>
-	    </ul>
-	  </div>
-	</footer>
-	</div>
-	<script src="js/main.js"></script>
-	</body>
-	</html>
+<footer class="main-footer">
+  <div class="main-footer__left">
+    <form class="footer-form">
+      <h3 class="footer-form__title">Stay updated</h3>
+      <input type="email" class="footer-form__input" placeholder="Enter your email" required>
+      <button type="submit" class="btn ">Subscribe</button>
+    </form>
+  </div>
+  <div class="main-footer__right">
+    <nav class="footer-menu">
+      <ul class="footer-menu__list">
+        <li class="footer-menu__item"><a href="#" class="footer-menu__link">About us</a></li>
+        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Coworking</a></li>
+        <li class="footer-menu__item"><a href="#" class="footer-menu__link">IT classes</a></li>
+        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Events</a></li>
+        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Blog</a></li>
+      </ul>
+    </nav>
+    <ul class="footer-social">
+      <li class="footer-social__item"><a href="#">Twitter</a></li>
+      <li class="footer-social__item"><a href="#">Facebook</a></li>
+      <li class="footer-social__item"><a href="#">Instagram</a></li>
+    </ul>
+  </div>
+</footer>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2lx6ySRGQnrvm008C0B2bQeyfBjH58eI"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

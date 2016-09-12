@@ -28,6 +28,66 @@
     min-height: 450px;
     padding-bottom: 1px;
   }
+
+  &--contact-us {
+    background: url("../img/contact-us_bg.jpg") center;
+    min-height: calc(100vh - 79px);
+  }
+
+  &__video-iframe {
+    position: absolute;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__shadow {
+    position: absolute;
+    padding: 0 $section-padding 60px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+
+
+
+    &__video-button {
+      height: $playVidD;
+      width: $playVidD;
+      border-radius: 50%;
+      border: .3rem solid #fff;
+      position: absolute;
+      top: calc((100% - #{$playVidD}) / 2);
+      left: calc((100% - #{$playVidD}) / 2);
+      cursor: pointer;
+      // transition: transform .1s;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 2px rgba(0,0,0,.4);
+      }
+      &:active {
+        transform: scale(1);
+      }
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        transform: translate( -.5rem,-50%);
+        border-left: 1.5rem solid #fff;
+        border-top: 1rem solid transparent;
+        border-bottom: 1rem solid transparent;
+      }
+    }
+    
+
+  }
+
 }
 
 .info {

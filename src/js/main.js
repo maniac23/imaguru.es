@@ -16,4 +16,6 @@ $(document).ready(function() {
   //= partials/accelerator-form.js
   //= partials/course-registration-form.js
   //= partials/equal-height.js
+  //= partials/play-promo-video.js
+  //= partials/create-map.js
 });
