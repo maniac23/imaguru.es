@@ -38,9 +38,6 @@
 		imaguruCampusInfoWindow.open(mapImaguruES, imaguruCampusMarker);
 		imaguruOfficeInfoWindow.open(mapImaguruES, imaguruOfficeMarker);
 
-
-
-
 	var campusOfficeRoute = [
 		{lat: 40.412657, lng: -3.718302},
 		{lat: 40.412636, lng: -3.718388},
