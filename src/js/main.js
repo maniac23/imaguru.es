@@ -22,4 +22,6 @@ $(document).ready(function() {
   //= partials/filter.js
   //= partials/course-registration-form.js
   //= partials/equal-height.js
+  //= partials/play-promo-video.js
+  //= partials/create-map.js
 });
