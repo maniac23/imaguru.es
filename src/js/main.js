@@ -6,7 +6,6 @@
 
 
 $(document).ready(function() {
-  //= partials/menu.js
     //= partials/info-dropdown.js
     //= partials/slider.js
     //= partials/show.js
@@ -20,4 +19,6 @@ $(document).ready(function() {
     //= partials/timetable-slider.js
     //= partials/events-gallery.js
     //= partials/filter.js
+    //= partials/course-registration-form.js
+    //= partials/equal-height.js
 });

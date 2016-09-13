@@ -23,6 +23,12 @@
     background-size: cover;
   }
 
+  &--fe-courses {
+    background: url("../img/fe-courses_bg.jpg") center;
+    background-size: cover;
+    min-height: 450px;
+    padding-bottom: 1px;
+
   &--events {
     background: url("../img/events_bg.jpg") top center;
     background-size: cover;
@@ -162,6 +168,15 @@
   text-align: center;
   color: #ffffff;
 
+  &--course-promo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: 90%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 12%;
@@ -174,6 +189,16 @@
     &--events {
       margin-bottom: 30px;
     }
+  }
+
+  &__course-title {
+    font-weight: 400;
+    font-size: 1.875rem;
+  }
+
+  &__course-paragraph {
+    font-size: 1.5rem;
+    font-weight: 300;
   }
 
   &__subtitle {
@@ -274,6 +299,7 @@
       opacity: 0.8;
     }
   }
+
 }
 
 .features {
