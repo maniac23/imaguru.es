@@ -22,4 +22,5 @@ $(document).ready(function() {
     //= partials/filter.js
     //= partials/team-show.js
     //= partials/jobs-show.js
+    //= partials/partners.js
 });
