@@ -1,0 +1,462 @@
+//= template/head.html
+<body>
+  //= template/sprite.html
+  <div class="wrapper">
+    //= template/header.html
+    <div class="promo promo--events">
+      <div class="info">
+        <div class="info__left">
+          <div class="info__adress">Startup hub in Madrid</div>
+        </div>
+        <div class="info__right">
+          <a href="mailto:info@imaguru.es" class="info__mail">info@imaguru.es</a>
+          <div class="info__wrap">
+            <button class="info__share">
+              <svg class="info__share-img">
+                  <use xlink:href="#share"></use>
+              </svg>
+            </button>
+            <div class="info__dropdown">
+              <a href="#">
+                <svg>
+                  <use xlink:href="#info_fb"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="#info_twitter"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="#info_google"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg>
+                  <use xlink:href="#info_linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-text main-text--slider">
+        <div class="main-text__slide">
+          <p class="main-text__date">Nov. 22 | 11:00 am</p>
+          <h1 class="main-text__title main-text__title--events">Marketing Digital para Startups II</h1>
+          <p class="main-text__paragraph main-text__paragraph--events">Check out the Guru-worthy calendar for events that will connect you to the tech community and inspire your next big idea.</p>
+          <a href="event.html" class="btn btn--event">View event</a>
+        </div>
+
+        <div class="main-text__slide">
+          <p class="main-text__date">Nov. 22 | 11:00 am</p>
+          <h1 class="main-text__title main-text__title--events">Marketing Digital para Startups II</h1>
+          <p class="main-text__paragraph main-text__paragraph--events">Check out the Guru-worthy calendar for events that will connect you to the tech community and inspire your next big idea.</p>
+          <a href="event.html" class="btn btn--event">View event</a>
+        </div>
+
+        <div class="main-text__slide">
+          <p class="main-text__date">Nov. 22 | 11:00 am</p>
+          <h1 class="main-text__title main-text__title--events">Marketing Digital para Startups II</h1>
+          <p class="main-text__paragraph main-text__paragraph--events">Check out the Guru-worthy calendar for events that will connect you to the tech community and inspire your next big idea.</p>
+          <a href="event.html" class="btn btn--event">View event</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="events-info">
+      <div class="events-info__left">
+        <div class="events-calendar">
+          <div class="events-calendar__month">
+            <ul>
+              <li class="prev">❮</li>
+              <li class="next">❯</li>
+              <li class="month-name">August 2016</li>
+            </ul>
+          </div>
+          <ul class="events-calendar__weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fri</li>
+            <li>Sat</li>
+            <li>Su</li>
+          </ul>
+          <ul class="events-calendar__days">
+            <li>1</li>
+            <li class="hasEvent">2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li class="hasEvent">6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li><span class="active">10</span></li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li class="hasEvent">16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li class="hasEvent">23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+          </ul>
+        </div>
+      </div>
+      <div class="events-info__right">
+    <!--Timetable  -->
+        <div class="events-timetable">
+          <form action="none" class="events-timetable__filters">
+            <input type="radio" id="filter-all" class="events-timetable__radio" name="filter" value="all" checked>
+            <label for="filter-all" class="events-timetable__filters-item">All</label>
+            <input type="radio" id="filter-tech" class="events-timetable__radio" name="filter" value="tech">
+            <label for="filter-tech" class="events-timetable__filters-item">Tech</label>
+            <input type="radio" id="filter-business" class="events-timetable__radio" name="filter" value="business">
+            <label for="filter-business" class="events-timetable__filters-item">Business</label>
+          </form>
+          <ul class="events-timetable__list" id="eventsList">
+
+            <li class="events-timetable__item business all" data-type="business">
+              <div class="events-timetable__time">
+                <p>9:00 am</p>
+                <p>29 july</p>
+              </div>
+              <div class="events-timetable__info">
+                <p class="events-timetable__category">
+                  <a class="events-timetable__category-item" href="#" data-category="business">Business</a>
+                  <a class="events-timetable__category-item" href="#" data-category="tech">Tech</a>
+                </p>
+                <a href="#" class="events-timetable__title">Marketing Digital para Startups II</a>
+              </div>
+            </li>
+
+            <li class="events-timetable__item tech all" data-type="tech">
+              <div class="events-timetable__time">
+                <p>10:00 am</p>
+                <p>30 july</p>
+              </div>
+              <div class="events-timetable__info">
+                <p class="events-timetable__category">
+                  <a href="#" class="events-timetable__category-item" data-category="tech">Tech</a>
+                </p>
+                <a href="#" class="events-timetable__title">iOS development for professionals</a>
+              </div>
+            </li>
+
+            <li class="events-timetable__item all tech">
+              <div class="events-timetable__time">
+                <p>14:00 pm</p>
+                <p>30 july</p>
+              </div>
+              <div class="events-timetable__info">
+                <p class="events-timetable__category">
+                  <a href="#" class="events-timetable__category-item" data-category="meetup">Meetup</a>
+                </p>
+                <a href="#" class="events-timetable__title">ES Jenkins Meetup #0</a>
+              </div>
+            </li>
+
+            <li class="events-timetable__item all tech">
+              <div class="events-timetable__time">
+                <p>10:00 am</p>
+                <p>30 july</p>
+              </div>
+              <div class="events-timetable__info">
+                <p class="events-timetable__category">
+                  <a href="#" class="events-timetable__category-item" data-category="tech">Tech</a>
+                </p>
+                <a href="#" class="events-timetable__title">iOS development for professionals</a>
+              </div>
+            </li>
+
+            <li class="events-timetable__item all business">
+              <div class="events-timetable__time">
+                <p>9:00 am</p>
+                <p>29 july</p>
+              </div>
+              <div class="events-timetable__info">
+                <p class="events-timetable__category">
+                  <a class="events-timetable__category-item" href="#" data-category="business">Business</a>
+                </p>
+                <a href="#" class="events-timetable__title">Marketing Digital para Startups II</a>
+              </div>
+            </li>
+
+            <li class="events-timetable__item all tech">
+              <div class="events-timetable__time">
+                <p>10:00 am</p>
+                <p>30 july</p>
+              </div>
+              <div class="events-timetable__info">
+                <p class="events-timetable__category">
+                  <a href="#" class="events-timetable__category-item" data-category="tech">Tech</a>
+                </p>
+                <a href="#" class="events-timetable__title">iOS development for professionals</a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="events-info">
+      <div class="events-info__left">
+        <div class="events-timetable">
+          <h2 class="events-timetable__main-title">This Week</h2>
+          <ul class="events-timetable__list">
+
+            <li class="events-timetable__item business">
+              <div class="events-timetable__time">
+                <p>9:00 am</p>
+                <p>29 july</p>
+              </div>
+              <div class="events-timetable__info">
+                <p class="events-timetable__category">
+                  <a class="events-timetable__category-item" href="#" data-category="business">Business</a>
+                  <a class="events-timetable__category-item" href="#" data-category="masterclass">Master class</a>
+                </p>
+                <a href="#" class="events-timetable__title">Marketing Digital para Startups II</a>
+              </div>
+            </li>
+
+            <li class="events-timetable__item business">
+              <div class="events-timetable__time">
+                <p>10:00 am</p>
+                <p>30 july</p>
+              </div>
+              <div class="events-timetable__info">
+                <p class="events-timetable__category">
+                  <a href="#" class="events-timetable__category-item" data-category="business">Business</a>
+                  <a href="#" class="events-timetable__category-item" data-category="masterclass">Master Class</a>
+                </p>
+                <a href="#" class="events-timetable__title">iOS development for professionals</a>
+              </div>
+            </li>
+
+            <li class="events-timetable__item meetup">
+              <div class="events-timetable__time">
+                <p>14:00 pm</p>
+                <p>30 july</p>
+              </div>
+              <div class="events-timetable__info">
+                <p class="events-timetable__category">
+                  <a href="#" class="events-timetable__category-item" data-category="meetup">Meetup</a>
+                </p>
+                <a href="#" class="events-timetable__title">ES Jenkins Meetup #0</a>
+              </div>
+            </li>
+
+            <li class="events-timetable__item business">
+              <div class="events-timetable__time">
+                <p>9:00 am</p>
+                <p>29 july</p>
+              </div>
+              <div class="events-timetable__info">
+                <p class="events-timetable__category">
+                  <a class="events-timetable__category-item" href="#" data-category="business">Business</a>
+                  <a class="events-timetable__category-item" href="#" data-category="masterclass">Master class</a>
+                </p>
+                <a href="#" class="events-timetable__title">Marketing Digital para Startups II</a>
+              </div>
+            </li>
+
+            <li class="events-timetable__item business">
+              <div class="events-timetable__time">
+                <p>10:00 am</p>
+                <p>30 july</p>
+              </div>
+              <div class="events-timetable__info">
+                <p class="events-timetable__category">
+                  <a href="#" class="events-timetable__category-item" data-category="business">Business</a>
+                  <a href="#" class="events-timetable__category-item" data-category="masterclass">Master Class</a>
+                </p>
+                <a href="#" class="events-timetable__title">iOS development for professionals</a>
+              </div>
+            </li>
+
+            <li class="events-timetable__item meetup">
+              <div class="events-timetable__time">
+                <p>14:00 pm</p>
+                <p>30 july</p>
+              </div>
+              <div class="events-timetable__info">
+                <p class="events-timetable__category">
+                  <a href="#" class="events-timetable__category-item" data-category="meetup">Meetup</a>
+                </p>
+                <a href="#" class="events-timetable__title">ES Jenkins Meetup #0</a>
+              </div>
+            </li>
+
+            <li class="events-timetable__item business">
+              <div class="events-timetable__time">
+                <p>9:00 am</p>
+                <p>29 july</p>
+              </div>
+              <div class="events-timetable__info">
+                <p class="events-timetable__category">
+                  <a class="events-timetable__category-item" href="#" data-category="business">Business</a>
+                  <a class="events-timetable__category-item" href="#" data-category="masterclass">Master class</a>
+                </p>
+                <a href="#" class="events-timetable__title">Marketing Digital para Startups II</a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="events-info__right events-info__right--swap">
+        <img src="img/events_img.jpg" alt="" class="events-info__image desktop">
+        <img src="img/events_img_rect.jpg" alt="" class="events-info__image tablet">
+      </div>
+    </div>
+
+    <!--Events preview  -->
+    <div class="posts">
+      <div class="preview">
+        <div class="preview__overlay">
+          <div class="preview__content">
+            <h2 class="preview__title">IT courses coming soon</h2>
+            <a href="#" class="btn btn-white">View All</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="posts__item">
+        <h3 class="posts__title--course">Frontend developer course</h3>
+        <p class="posts__period">Feb, 1 - Apr, 3</p>
+        <p class="posts__price">399 eur</p>
+      </div>
+
+      <div class="posts__item">
+        <h3 class="posts__title--course">iOS developer course</h3>
+        <p class="posts__period">Feb, 1 - Apr, 3</p>
+        <p class="posts__price">699 eur</p>
+      </div>
+
+    </div>
+
+    <div class="events-gallery">
+      <h2 class="events-gallery__title">Past events gallery</h2>
+      <div class="events-gallery__list events-gallery__list--slider">
+        <div class="events-gallery__item">
+          <img class="events-gallery__image" src="img/events-img1.jpg" alt="">
+          <div class="events-gallery__overlay">
+            <div class="events-gallery__content">
+              <h3 class="events-gallery__name">Fintech hackaton</h3>
+              <a href="event.html#event-photo" class="btn btn-white">Show photos</a>
+            </div>
+          </div>
+        </div>
+        <div class="events-gallery__item">
+          <img class="events-gallery__image" src="img/events-img2.jpg" alt="">
+          <div class="events-gallery__overlay">
+            <div class="events-gallery__content">
+              <h3 class="events-gallery__name">Fintech hackaton</h3>
+              <a href="event.html#event-photo" class="btn btn-white">Показать все</a>
+            </div>
+          </div>
+        </div>
+        <div class="events-gallery__item">
+          <img class="events-gallery__image" src="img/events-img3.jpg" alt="">
+          <div class="events-gallery__overlay">
+            <div class="events-gallery__content">
+              <h3 class="events-gallery__name">Fintech hackaton</h3>
+              <a href="event.html#event-photo" class="btn btn-white">Показать все</a>
+            </div>
+          </div>
+        </div>
+        <div class="events-gallery__item">
+          <img class="events-gallery__image" src="img/events-img1.jpg" alt="">
+          <div class="events-gallery__overlay">
+            <div class="events-gallery__content">
+              <h3 class="events-gallery__name">Fintech hackaton</h3>
+              <a href="event.html#event-photo" class="btn btn-white">Показать все</a>
+            </div>
+          </div>
+        </div>
+        <div class="events-gallery__item">
+          <img class="events-gallery__image" src="img/events-img2.jpg" alt="">
+          <div class="events-gallery__overlay">
+            <div class="events-gallery__content">
+              <h3 class="events-gallery__name">Fintech hackaton</h3>
+              <a href="event.html#event-photo" class="btn btn-white">Показать все</a>
+            </div>
+          </div>
+        </div>
+        <div class="events-gallery__item">
+          <img class="events-gallery__image" src="img/events-img3.jpg" alt="">
+          <div class="events-gallery__overlay">
+            <div class="events-gallery__content">
+              <h3 class="events-gallery__name">Fintech hackaton</h3>
+              <a href="event.html#event-photo" class="btn btn-white">Показать все</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="about__left about__left--orange">
+        <div class="subscribe subscribe--orange">
+          <p class="subscribe__text">Leave your email to subscribe to our news about events and courses:</p>
+          <form class="subscribe__form">
+            <input type="email" placeholder="Enter your email">
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="about__right">
+        <div class="social">
+          <h2 class="social__title">Follow us</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#">
+                <svg class="social__icon">
+                  <use xlink:href="#fb_icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <svg class="social__icon">
+                  <use xlink:href="#twitter_icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <svg class="social__icon">
+                  <use xlink:href="#instagram_icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <svg class="social__icon">
+                  <use xlink:href="#linkedin_icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    //= template/footer.html
