@@ -1,0 +1,382 @@
+//= template/head.html
+<body>
+	//= template/sprite.html
+	//= template/header.html
+
+	<div class="wrapper course">
+
+		<div class="promo promo--fe-courses">
+			<div class="info">
+				<div class="info__left">
+					<div class="info__adress">Startup hub in Madrid</div>
+				</div>
+				<div class="info__right">
+					<a href="mailto:info@imaguru.es" class="info__mail">info@imaguru.es</a>
+					<button class="info__share">
+						<svg class="info__share-img">
+							<use xlink:href="#share"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="main-text main-text--course-promo">
+				<h2 class="main-text__course-title">Learn to code with Imaguru</h2>
+				<p class="main-text__course-paragraph">8 weeks course: Mon-Fri, 3 hours per day</p>
+			</div>
+		</div>
+<!-- row -->
+		<div class="row">
+			<div class="content-block content-block--grey course-registration course-registration--two-parts">
+				<h2 class="content-block__title course-registration__title">Choose level you want to apply:</h2>
+				<form action="#">
+					<label class="course-registration__label">
+						<input type="checkbox" class="whole-courses" name="whole">
+						<span class="replace-checkbox"></span>
+						<span>The whole course. Save 200 EURO!</span>
+					</label>
+					<div class="label-wrapper">
+						<label class="course-registration__label">
+							<span class="course-registration__label__title">0s (200 eur)</span>
+							<input type="checkbox" class="edu-level edu-level--os" name="level_os" data-price="200">
+							<span class="replace-checkbox"></span>
+							<span class="stripe stripe--os"></span>
+						</label>
+
+						<label class="course-registration__label">
+							<span class="course-registration__label__title">Beginner (250 eur)</span>
+							<input type="checkbox" class="edu-level edu-level--beginner" name="level_beginner" data-price="250">
+							<span class="replace-checkbox"></span>
+							<span class="stripe stripe--beginner"></span>
+						</label>
+
+						<label class="course-registration__label">
+							<span class="course-registration__label__title">Mid (300 eur)</span>
+							<input type="checkbox" class="edu-level edu-level--mid" name="level--mid" data-price="300">
+							<span class="replace-checkbox"></span>
+							<span class="stripe stripe--mid"></span>
+						</label>
+
+						<label class="course-registration__label">
+							<span class="course-registration__label__title">Advanced (250 eur)</span>
+							<input type="checkbox" class="edu-level edu-level--adv" name="level_adv" data-price="250">
+							<span class="replace-checkbox"></span>
+							<span class="stripe stripe--adv"></span>
+						</label>
+					</div>
+					<div class="course-registration__total-wrapper">
+						<span class="course-registration__total">Total: <span class="course-registration__total__count">0 eur</span></span>
+						<span class="btn btn--orange course-registration__continue">Register</span>
+
+					</div>
+
+						<!-- FORM SECOD PART -->
+					<div class="course-registration__second-part hidden absolute">
+						<div class="course-registration__second-part__check-date">
+
+							<label>
+								<input type="radio" value="feb-apr" name="date_of_courses" checked>
+								<span class="replace-radio"></span>
+								<span class="text">Feb, 1 - Apr, 3</span>
+							</label>
+
+							<label>
+								<input type="radio" value="may-jul" name="date_of_courses">
+								<span class="replace-radio"></span>
+								<span class="text">May, 1 - Jul, 30</span>
+							</label>
+						</div>
+
+						<div class="course-registration__second-part__text-info">
+							<input type="text" placeholder="Name/Last Name" required>
+							<input type="tel" placeholder="Phone number" required>
+							<input type="email" placeholder="Email address" required>
+						</div>
+
+						<div class="course-registration__second-part__payment">
+							<label>
+								<input type="radio" class="adv-payment" value="advance" name="payment" data-discount="10">
+								<span class="replace-radio"></span>
+								<span class="text">Advance payment</span>
+								<span class="discount">10% discount</span>
+							</label>
+							<label>
+								<input type="radio" value="2 installments" name="payment" data-discount="5">
+								<span class="replace-radio"></span>
+								<span class="text">Payment in&#160;2 installments</span>
+								<span class="discount">5% discount</span>
+							</label>
+							<label>
+								<input type="radio" value="3 installments" name="payment" data-comission='0'>
+								<span class="replace-radio"></span>
+								<span class="text">Payment in&#160;3 installments</span>
+								<span class="discount">0% comission</span>
+							</label>
+							<label>
+								<input type="radio" value="later" name="payment" checked>
+								<span class="replace-radio"></span>
+								<span class="text">I will decide later</span>
+								<span class="discount"></span>
+							</label>
+						</div>
+
+						<div class="course-registration__total-wrapper">
+							<span class="course-registration__total"><span class="course-registration__total__count">750 eur</span></span>
+							<button type='submit' class="btn btn--orange course-registration__submit">Register</button>
+						</div>
+
+						<span class="course-registration__second-part__close-button"></span>
+					</div>
+
+				</form>
+
+			</div>
+
+			<div class="content-block content-block--corners content-block--flex">
+				<div class="content-block--flex__wrapper">
+					<p class="content-block--flex__descr content-block--flex__descr--sale">Register until January, 20</p>
+					<p class="content-block--flex__descr content-block--flex__descr--price">and get <br>50% off</p>
+				</div>
+			</div>
+
+		</div>
+<!-- program -->
+<section class="course-programm">
+	<h3 class="course-programm__title">
+		8 weeks course:<br />
+		<span>Mon-Fri, 3 hours per day</span>
+	</h3>
+	<article class="course-programm__article course-programm__article--os">
+		<div class="course-programm__article__title">
+			<h5>Os</h5>
+			<span>(2 weeks)</span>
+		</div>
+		<p class="course-programm__article__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas praesentium rerum tempora, inventore sed, possimus beatae ad consectetur a, soluta quia voluptate iusto laboriosam dolores quibusdam. Culpa fuga ipsa recusandae, cumque, delectus eos odio nisi error quisquam omnis maiores. Tempore sequi minima repudiandae, iure perferendis debitis ad quod saepe dolorum!.</p>
+	</article>
+	<article class="course-programm__article course-programm__article--beginner">
+		<div class="course-programm__article__title">
+			<h5>Beginner</h5>
+			<span>(2 weeks)</span>
+		</div>
+		<p class="course-programm__article__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum optio doloribus velit incidunt reprehenderit ex architecto sapiente repellendus saepe doloremque tempora deleniti assumenda distinctio iure dicta ratione numquam maiores eos, illo, blanditiis. Veniam, doloribus, ut! Adipisci explicabo, quia incidunt est, dolore ad! Consequuntur, excepturi aliquam nobis repudiandae optio aspernatur..</p>
+	</article>
+	<article class="course-programm__article course-programm__article--mid">
+		<div class="course-programm__article__title">
+			<h5>Mid</h5>
+			<span>(2 weeks)</span>
+		</div>
+		<p class="course-programm__article__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero hic, numquam accusantium. Ad obcaecati dicta animi dolorem natus consequatur ipsam expedita nesciunt, dolore mollitia rerum, molestias magnam, libero in doloremque. Sequi odio eius recusandae impedit porro earum, similique odit assumenda labore et laudantium aut. Consequatur totam voluptatem delectus neque porro..</p>
+	</article>
+	<article class="course-programm__article course-programm__article--adv">
+		<div class="course-programm__article__title">
+			<h5>Advanced</h5>
+			<span>(2 weeks)</span>
+		</div>
+		<p class="course-programm__article__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tenetur, quia minima ut quibusdam dicta in praesentium, nostrum iste accusamus est. Deserunt veritatis dicta fuga ex natus ipsum provident! Soluta quia expedita itaque repellendus officiis eligendi fugit animi obcaecati quis quam? Magnam blanditiis, est dignissimos! Quaerat omnis pariatur, provident expedita?.</p>
+	</article>
+</section>
+<!-- teachers -->
+<section class="course-teachers light-grey-bg">
+	<h3 class="course-teachers__title">About teachers</h3>
+	<article class="course-teachers__article">
+		<div class="course-teachers__article__portrait">
+			<img src="img/teacher_avatar_1.jpg" alt="">
+		</div>
+		<span class="course-teachers__article__name">Chuck Norris</span>
+		<p class="course-teachers__article__dscr">Marco Stubits will talk about expectations, communication and business trip behavior tips while working directly with US clients. Marco – CEO at Specific-Group USA. 11 years of experience in cross country business coordination. 5 years doing IT-business in USA.</p>
+	</article>
+	<article class="course-teachers__article">
+		<div class="course-teachers__article__portrait">
+			<img src="img/teacher_avatar_2.jpg" alt="">
+		</div>
+		<span class="course-teachers__article__name">Jason Statham</span>
+		<p class="course-teachers__article__dscr">Alex Short will talk what to expect from the Belarusian IT specialists start-ups, where they come to us, what attitude you can face what is expected from you and what you should expect, the business processes in start-ups, management in startups. Alex - 10 in IT, 5 years in the PM, the last year working with stratapami. I love working with people and ideas.</p>
+	</article>
+	<article class="course-teachers__article">
+		<div class="course-teachers__article__portrait">
+			<img src="img/teacher_avatar_3.jpg" alt="">
+		</div>
+		<span class="course-teachers__article__name">Luke Skywalker</span>
+		<p class="course-teachers__article__dscr">Alex Short will talk what to expect from the Belarusian IT specialists start-ups, where they come to us, what attitude you can face what is expected from you and what you should expect, the business processes in start-ups, management in startups. Alex - 10 in IT, 5 years in the PM, the last year working with stratapami. I love working with people and idea</p>
+	</article>
+</section>
+<!--  -->
+
+<section class="about-classes">
+	<p>Learn how your classes are held in our <a href="#">Blog</a></p>
+</section>
+<!--BLOG  -->
+		<div class="posts">
+			<div class="preview preview--blog">
+				<div class="preview__overlay">
+					<div class="preview__content">
+						<h2 class="preview__title">IMAGURU BLOG</h2>
+						<a href="#" class="btn btn-white">View All</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="posts__item posts__item--blog">
+				<a href="#" class="posts__title posts__title--blog">RE: Coding Academies Are Nonsense</a>
+				<div class="posts__date">30.12. 2016</div>
+				<p class="posts__author">Posted by <strong>George Cligan</strong></p>
+			</div>
+
+			<div class="posts__item posts__item--blog">
+
+				<a href="#" class="posts__title posts__title--blog">First electoral debate on sturtups: challenges and opportunities</a>
+				<div class="posts__date">30.12. 2016</div>
+			</div>
+
+		</div>
+
+		<section class="feedback">
+			<h2 class="feedback__title">Feedbacks</h2>
+			<ul class="feedback__list">
+				<li class="feedback__item">
+					<div class="feedback__avatar">
+						<img src="img/comments_avatar1.jpg" alt="">
+					</div>
+					<div class="feedback__info">
+						<div class="feedback__rating">
+
+						</div>
+						<div class="feedback__meta">
+							<span class="feedback__author">Marta S.</span>
+							<span class="feedback__date">07/27/2016</span>
+						</div>
+						<p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a quasi ut, praesentium! Unde dicta quam, quibusdam, eaque quidem hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, deleniti molestiae porro necessitatibus eos? Repellendus labore, voluptatibus officia praesentium dolores!</p>
+					</div>
+				</li>
+				<li class="feedback__item">
+					<div class="feedback__avatar">
+						<img src="img/comments_avatar2.jpg" alt="">
+					</div>
+					<div class="feedback__info">
+						<div class="feedback__rating">
+
+						</div>
+						<div class="feedback__meta">
+							<span class="feedback__author">Pablo S.</span>
+							<span class="feedback__date">07/27/2016</span>
+						</div>
+						<p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a quasi ut, praesentium! Unde dicta quam, quibusdam, eaque quidem hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, deleniti molestiae porro necessitatibus eos? Repellendus labore, voluptatibus officia praesentium dolores!</p>
+					</div>
+				</li>
+				<li class="feedback__item">
+					<div class="feedback__avatar">
+						<img src="img/comments_avatar1.jpg" alt="">
+					</div>
+					<div class="feedback__info">
+						<div class="feedback__rating">
+
+						</div>
+						<div class="feedback__meta">
+							<span class="feedback__author">Marta S.</span>
+							<span class="feedback__date">07/27/2016</span>
+						</div>
+						<p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a quasi ut, praesentium! Unde dicta quam, quibusdam, eaque quidem hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, deleniti molestiae porro necessitatibus eos? Repellendus labore, voluptatibus officia praesentium dolores!</p>
+					</div>
+				</li>
+				<li class="feedback__item">
+					<div class="feedback__avatar">
+						<img src="img/comments_avatar2.jpg" alt="">
+					</div>
+					<div class="feedback__info">
+						<div class="feedback__rating">
+
+						</div>
+						<div class="feedback__meta">
+							<span class="feedback__author">Pablo S.</span>
+							<span class="feedback__date">07/27/2016</span>
+						</div>
+						<p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a quasi ut, praesentium! Unde dicta quam, quibusdam, eaque quidem hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, deleniti molestiae porro necessitatibus eos? Repellendus labore, voluptatibus officia praesentium dolores!</p>
+					</div>
+				</li>
+				<li class="feedback__item">
+					<div class="feedback__avatar">
+						<img src="img/comments_avatar1.jpg" alt="">
+					</div>
+					<div class="feedback__info">
+						<div class="feedback__rating">
+						</div>
+						<div class="feedback__meta">
+							<span class="feedback__author">Marta S.</span>
+							<span class="feedback__date">07/27/2016</span>
+						</div>
+						<p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a quasi ut, praesentium! Unde dicta quam, quibusdam, eaque quidem hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, deleniti molestiae porro necessitatibus eos? Repellendus labore, voluptatibus officia praesentium dolores!</p>
+					</div>
+				</li>
+				<li class="feedback__item">
+					<div class="feedback__avatar">
+						<img src="img/comments_avatar2.jpg" alt="">
+					</div>
+					<div class="feedback__info">
+						<div class="feedback__rating">
+
+						</div>
+						<div class="feedback__meta">
+							<span class="feedback__author">Pablo S.</span>
+							<span class="feedback__date">07/27/2016</span>
+						</div>
+						<p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a quasi ut, praesentium! Unde dicta quam, quibusdam, eaque quidem hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, deleniti molestiae porro necessitatibus eos? Repellendus labore, voluptatibus officia praesentium dolores!</p>
+					</div>
+				</li>
+			</ul>
+			<button id="feedback" type="button" class="btn btn--orange">Show more</button>
+		</section>
+
+		<div class="about">
+			<div class="about__left about__left--orange">
+				<div class="subscribe subscribe--orange">
+					<p class="subscribe__text">Leave your email to subscribe to our news about events and courses:</p>
+					<form class="subscribe__form">
+						<input type="email" placeholder="Enter your email">
+						<button class="btn" type="submit">Subscribe</button>
+					</form>
+				</div>
+			</div>
+			<div class="about__right">
+				<div class="social">
+					<h2 class="social__title">Follow us</h2>
+					<ul class="social__list">
+						<li class="social__item">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="#fb_icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="#twitter_icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="#instagram_icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="#linkedin_icon"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	//= template/footer.html

@@ -23,4 +23,8 @@ $(document).ready(function() {
     //= partials/team-show.js
     //= partials/jobs-show.js
     //= partials/partners.js
+    //= partials/course-registration-form.js
+    //= partials/equal-height.js
+    //= partials/play-promo-video.js
+    //= partials/create-map.js
 });

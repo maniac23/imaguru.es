@@ -1,0 +1,387 @@
+//= template/head.html
+<body>
+	//= template/sprite.html
+	//= template/header.html
+
+	<div class="wrapper course">
+
+		<div class="promo promo--fe-courses">
+			<div class="info">
+				<div class="info__left">
+					<div class="info__adress">Startup hub in Madrid</div>
+				</div>
+				<div class="info__right">
+					<a href="mailto:info@imaguru.es" class="info__mail">info@imaguru.es</a>
+					<button class="info__share">
+						<svg class="info__share-img">
+							<use xlink:href="#share"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="main-text main-text--course-promo">
+				<h2 class="main-text__course-title">iOS Development course</h2>
+				<p class="main-text__course-paragraph">6 weeks course: Mon-Fri, 3 hours per day</p>
+			</div>
+		</div>
+<!-- row -->
+		<div class="row">
+			<div class="content-block content-block--grey course-registration course-registration--one-part">
+				<form action="#">
+						<!-- FORM SECOD PART -->
+					<div class="course-registration__second-part">
+						<div class="course-registration__second-part__check-date">
+
+							<label>
+								<input type="radio" value="feb-apr" name="date_of_courses" checked>
+								<span class="replace-radio"></span>
+								<span class="text">Feb, 1 - Apr, 3</span>
+							</label>
+
+							<label>
+								<input type="radio" value="may-jul" name="date_of_courses">
+								<span class="replace-radio"></span>
+								<span class="text">May, 1 - Jul, 30</span>
+							</label>
+						</div>
+
+						<div class="course-registration__second-part__text-info">
+							<input type="text" placeholder="Name/Last Name" required>
+							<input type="tel" placeholder="Phone number" required>
+							<input type="email" placeholder="Email address" required>
+						</div>
+
+						<div class="course-registration__second-part__payment">
+							<label>
+								<input type="radio" class="adv-payment" value="advance" name="payment" data-discount="10">
+								<span class="replace-radio"></span>
+								<span class="text">Advance payment</span>
+								<span class="discount">10% discount</span>
+							</label>
+							<label>
+								<input type="radio" value="2 installments" name="payment" data-discount="5">
+								<span class="replace-radio"></span>
+								<span class="text">Payment in&#160;2 installments</span>
+								<span class="discount">5% discount</span>
+							</label>
+							<label>
+								<input type="radio" value="3 installments" name="payment" data-comission='0'>
+								<span class="replace-radio"></span>
+								<span class="text">Payment in&#160;3 installments</span>
+								<span class="discount">0% comission</span>
+							</label>
+							<label>
+								<input type="radio" value="later" name="payment" checked>
+								<span class="replace-radio"></span>
+								<span class="text">I will decide later</span>
+								<span class="discount"></span>
+							</label>
+						</div>
+
+						<div class="course-registration__total-wrapper">
+							<span class="course-registration__total"><span class="course-registration__total__count" data-base-price="650">650 eur</span></span>
+							<button type='submit' class="btn btn--orange course-registration__submit">Register</button>
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+
+			<div class="content-block content-block--corners content-block--flex">
+				<div class="content-block--flex__wrapper">
+					<p class="content-block--flex__descr content-block--flex__descr--sale">Register until January, 20</p>
+					<p class="content-block--flex__descr content-block--flex__descr--price">and get <br>50% off</p>
+				</div>
+			</div>
+
+		</div>
+
+	<section class="course-structure">
+		<h3 class="course-programm__title">
+			Course Structure
+		</h3>
+		<div class="course-structure__levels">
+			<article class="course-structure__levels__level course-structure__levels__level--1">
+			<div class="title-wrapper">
+				<span class="course-structure__levels__level__title">Swift basics and&#160;App Interfaces</span>
+			</div>
+				<div class="course-structure__levels__level__stripe"></div>
+			</article>
+
+			<article class="course-structure__levels__level course-structure__levels__level--2">
+				<div class="title-wrapper">
+					<span class="course-structure__levels__level__title">Logic, Interaction</span>
+				</div>
+				<div class="course-structure__levels__level__stripe"></div>
+				
+			</article>
+
+			<article class="course-structure__levels__level course-structure__levels__level--3">
+			<div class="title-wrapper">
+				<span class="course-structure__levels__level__title">Working with Data</span>
+			</div>
+				<div class="course-structure__levels__level__stripe"></div>
+			</article>
+
+			<article class="course-structure__levels__level course-structure__levels__level--4">
+			<div class="title-wrapper">
+				<span class="course-structure__levels__level__title">Submitting your app</span>
+			</div>
+				<div class="course-structure__levels__level__stripe"></div>
+			</article>
+		</div>
+	</section>
+
+<!-- program -->
+<section class="course-programm light-grey-bg">
+	<h3 class="course-programm__title">
+		You’ll learn
+	</h3>
+	<article class="course-programm__article course-programm__article--os">
+		<div class="course-programm__article__title course-programm__article__title--eq-height">
+			<h5>Swift basics and App&#160;Interfaces</h5>
+			<span>(2 weeks)</span>
+		</div>
+		<div class="course-programm__article__paragraph">
+			<h6>The course includes:</h6>
+			<ul>
+				<li>The basics of Cocoa Framework</li>
+				<li>Swift code principles</li>
+				<li>Xcode introduction</li>
+				<li>IOS SDK overview</li>
+			</ul>
+		</div>
+	</article>
+	<article class="course-programm__article course-programm__article--beginner">
+		<div class="course-programm__article__title">
+			<h5>Logics, Interaction</h5>
+			<span>(2 weeks)</span>
+		</div>
+		<div class="course-programm__article__paragraph">
+			<p>We develop a back-end web application and APIs using a modern programming language and MVC web development framework.</p>
+			<h6>The course includes:</h6>
+			<p>Model-View-Controller Patterns, Navigation Controllers, UIKit frameworks, Interactions & Gestures, Delegation, Interaction Patterns, Core ios7 Libraries, Using most popular APIs.</p>
+		</div>
+	</article>
+	<article class="course-programm__article course-programm__article--mid">
+		<div class="course-programm__article__title">
+			<h5>Working with Data</h5>
+			<span>(2 weeks)</span>
+		</div>
+		<div class="course-programm__article__paragraph">
+			<p>We’ve just learned how to write an app with a simple user interface and basic behaviour. At this point, we are learning how to implement additional behavior that will turn a project into a full-featured app</p>
+			<h6>The course includes:</h6>
+			<p>Connection to the Internet. NSURLConnection. Core Data. Foundation Framework</p>
+		</div>
+	</article>
+	<article class="course-programm__article course-programm__article--adv">
+		<div class="course-programm__article__title">
+			<h5>Submitting your app</h5>
+			<span>(2 weeks)</span>
+		</div>
+		<div class="course-programm__article__paragraph">
+			<p>Working prototype is ready. Debugging and testing are completed. What’s next? We distribute apps through the stores, get using A/B testing processes and test different methods to attracting first users.</p>
+			<h6>The course includes:</h6>
+			<p>Unit and Integration testing. Defining Metadata. Submitting app. Release. A/B Testing. Attracting first traffic to application.</p>
+			</div>
+	</article>
+</section>
+<!-- teachers -->
+<section class="course-teachers">
+	<h3 class="course-teachers__title">About teachers</h3>
+	<article class="course-teachers__article">
+		<div class="course-teachers__article__portrait">
+			<img src="img/teacher_avatar_1.jpg" alt="">
+		</div>
+		<span class="course-teachers__article__name">Chuck Norris</span>
+		<p class="course-teachers__article__dscr">Marco Stubits will talk about expectations, communication and business trip behavior tips while working directly with US clients. Marco – CEO at Specific-Group USA. 11 years of experience in cross country business coordination. 5 years doing IT-business in USA.</p>
+	</article>
+	<article class="course-teachers__article">
+		<div class="course-teachers__article__portrait">
+			<img src="img/teacher_avatar_2.jpg" alt="">
+		</div>
+		<span class="course-teachers__article__name">Jason Statham</span>
+		<p class="course-teachers__article__dscr">Alex Short will talk what to expect from the Belarusian IT specialists start-ups, where they come to us, what attitude you can face what is expected from you and what you should expect, the business processes in start-ups, management in startups. Alex - 10 in IT, 5 years in the PM, the last year working with stratapami. I love working with people and ideas.</p>
+	</article>
+	<article class="course-teachers__article">
+		<div class="course-teachers__article__portrait">
+			<img src="img/teacher_avatar_3.jpg" alt="">
+		</div>
+		<span class="course-teachers__article__name">Luke Skywalker</span>
+		<p class="course-teachers__article__dscr">Alex Short will talk what to expect from the Belarusian IT specialists start-ups, where they come to us, what attitude you can face what is expected from you and what you should expect, the business processes in start-ups, management in startups. Alex - 10 in IT, 5 years in the PM, the last year working with stratapami. I love working with people and idea</p>
+	</article>
+</section>
+<!--  -->
+
+<!--BLOG  -->
+		<div class="posts">
+			<div class="preview preview--blog">
+				<div class="preview__overlay">
+					<div class="preview__content">
+						<h2 class="preview__title">IMAGURU BLOG</h2>
+						<a href="#" class="btn btn-white">View All</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="posts__item posts__item--blog">
+				<a href="#" class="posts__title posts__title--blog">RE: Coding Academies Are Nonsense</a>
+				<div class="posts__date">30.12. 2016</div>
+				<p class="posts__author">Posted by <strong>George Cligan</strong></p>
+			</div>
+
+			<div class="posts__item posts__item--blog">
+
+				<a href="#" class="posts__title posts__title--blog">First electoral debate on sturtups: challenges and opportunities</a>
+				<div class="posts__date">30.12. 2016</div>
+			</div>
+
+		</div>
+
+		<section class="feedback">
+			<h2 class="feedback__title">Feedbacks</h2>
+			<ul class="feedback__list">
+				<li class="feedback__item">
+					<div class="feedback__avatar">
+						<img src="img/comments_avatar1.jpg" alt="">
+					</div>
+					<div class="feedback__info">
+						<div class="feedback__rating">
+
+						</div>
+						<div class="feedback__meta">
+							<span class="feedback__author">Marta S.</span>
+							<span class="feedback__date">07/27/2016</span>
+						</div>
+						<p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a quasi ut, praesentium! Unde dicta quam, quibusdam, eaque quidem hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, deleniti molestiae porro necessitatibus eos? Repellendus labore, voluptatibus officia praesentium dolores!</p>
+					</div>
+				</li>
+				<li class="feedback__item">
+					<div class="feedback__avatar">
+						<img src="img/comments_avatar2.jpg" alt="">
+					</div>
+					<div class="feedback__info">
+						<div class="feedback__rating">
+
+						</div>
+						<div class="feedback__meta">
+							<span class="feedback__author">Pablo S.</span>
+							<span class="feedback__date">07/27/2016</span>
+						</div>
+						<p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a quasi ut, praesentium! Unde dicta quam, quibusdam, eaque quidem hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, deleniti molestiae porro necessitatibus eos? Repellendus labore, voluptatibus officia praesentium dolores!</p>
+					</div>
+				</li>
+				<li class="feedback__item">
+					<div class="feedback__avatar">
+						<img src="img/comments_avatar1.jpg" alt="">
+					</div>
+					<div class="feedback__info">
+						<div class="feedback__rating">
+
+						</div>
+						<div class="feedback__meta">
+							<span class="feedback__author">Marta S.</span>
+							<span class="feedback__date">07/27/2016</span>
+						</div>
+						<p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a quasi ut, praesentium! Unde dicta quam, quibusdam, eaque quidem hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, deleniti molestiae porro necessitatibus eos? Repellendus labore, voluptatibus officia praesentium dolores!</p>
+					</div>
+				</li>
+				<li class="feedback__item">
+					<div class="feedback__avatar">
+						<img src="img/comments_avatar2.jpg" alt="">
+					</div>
+					<div class="feedback__info">
+						<div class="feedback__rating">
+
+						</div>
+						<div class="feedback__meta">
+							<span class="feedback__author">Pablo S.</span>
+							<span class="feedback__date">07/27/2016</span>
+						</div>
+						<p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a quasi ut, praesentium! Unde dicta quam, quibusdam, eaque quidem hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, deleniti molestiae porro necessitatibus eos? Repellendus labore, voluptatibus officia praesentium dolores!</p>
+					</div>
+				</li>
+				<li class="feedback__item">
+					<div class="feedback__avatar">
+						<img src="img/comments_avatar1.jpg" alt="">
+					</div>
+					<div class="feedback__info">
+						<div class="feedback__rating">
+						</div>
+						<div class="feedback__meta">
+							<span class="feedback__author">Marta S.</span>
+							<span class="feedback__date">07/27/2016</span>
+						</div>
+						<p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a quasi ut, praesentium! Unde dicta quam, quibusdam, eaque quidem hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, deleniti molestiae porro necessitatibus eos? Repellendus labore, voluptatibus officia praesentium dolores!</p>
+					</div>
+				</li>
+				<li class="feedback__item">
+					<div class="feedback__avatar">
+						<img src="img/comments_avatar2.jpg" alt="">
+					</div>
+					<div class="feedback__info">
+						<div class="feedback__rating">
+
+						</div>
+						<div class="feedback__meta">
+							<span class="feedback__author">Pablo S.</span>
+							<span class="feedback__date">07/27/2016</span>
+						</div>
+						<p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a quasi ut, praesentium! Unde dicta quam, quibusdam, eaque quidem hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, deleniti molestiae porro necessitatibus eos? Repellendus labore, voluptatibus officia praesentium dolores!</p>
+					</div>
+				</li>
+			</ul>
+			<button id="feedback" type="button" class="btn btn--orange">Show more</button>
+		</section>
+
+		<div class="about">
+			<div class="about__left about__left--orange">
+				<div class="subscribe subscribe--orange">
+					<p class="subscribe__text">Leave your email to subscribe to our news about events and courses:</p>
+					<form class="subscribe__form">
+						<input type="email" placeholder="Enter your email">
+						<button class="btn" type="submit">Subscribe</button>
+					</form>
+				</div>
+			</div>
+			<div class="about__right">
+				<div class="social">
+					<h2 class="social__title">Follow us</h2>
+					<ul class="social__list">
+						<li class="social__item">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="#fb_icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="#twitter_icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="#instagram_icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#">
+								<svg class="social__icon">
+									<use xlink:href="#linkedin_icon"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	//= template/footer.html
