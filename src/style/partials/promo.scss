@@ -17,9 +17,10 @@
   }
 
   &--academy {
+    min-height: 450px;
+
     background: url("../img/academy_bg.jpg") center;
     background-size: cover;
-    min-height: 450px;
   }
 
   &--fe-courses {
@@ -27,6 +28,10 @@
     background-size: cover;
     min-height: 450px;
     padding-bottom: 1px;
+
+  &--events {
+    background: url("../img/events_bg.jpg") top center;
+    background-size: cover;
   }
 }
 
@@ -97,9 +102,11 @@
   }
 
   &__share {
+    position: relative;
+
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     padding: 0;
 
     vertical-align: top;
@@ -113,9 +120,42 @@
     }
   }
 
+  &__wrap {
+    position: relative;
+
+    display: inline-block;
+  }
+
   &__share-img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 40px;
+    z-index: 2000;
+
+    display: none;
+
+    a {
+      display: block;
+      width: 25px;
+      margin-bottom: 5px;
+
+      opacity: 0.5;
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
 
@@ -139,12 +179,16 @@
 
   &__title {
     margin: 0;
+    margin-bottom: 12%;
     padding: 0;
 
-    font-size: 2.125rem;
     font-weight: 400;
+    font-size: 2.125rem;
     text-transform: uppercase;
-    margin-bottom: 12%;
+
+    &--events {
+      margin-bottom: 30px;
+    }
   }
 
   &__course-title {
@@ -180,6 +224,13 @@
     padding: 0;
 
     font-size: 1.875rem;
+
+    &--events {
+      margin-bottom: 40px;
+
+      font-weight: 400;
+      font-size: 1.25rem;
+    }
   }
 
   &__date {
@@ -200,10 +251,53 @@
   }
 
   &__buttons {
-    width: 50%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &--slider {
+    position: relative;
+
+    margin-bottom: 30px;
+
+    .slick-dots {
+      position: absolute;
+      top: 85%;
+      bottom: top;
+      left: 50%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0;
+      margin-top: 8%;
+      padding: 0;
+
+      list-style-type: none;
+
+      transform: translateX(-50%);
+
+      button {
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin-right: 10px;
+
+        font-size: 0;
+
+        background-color: $white-color;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+        opacity: 0.3;
+      }
+    }
+
+    li.slick-active > button {
+      opacity: 0.8;
+    }
   }
 
 }
@@ -292,9 +386,9 @@
   }
 
   &__icon {
+    display: block;
     max-width: 80px;
     max-height: 80px;
-    display: block;
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -326,6 +420,12 @@
     &__buttons {
       width: 90%;
     }
+
+    &--slider {
+      .slick-dots {
+        top: 95%;
+      }
+    }
   }
 }
 
@@ -351,12 +451,41 @@
 
       text-align: right;
     }
+
+    &__wrap {
+      margin-bottom: 40px;
+    }
+
+    &__dropdown {
+      right: 100%;
+
+      width: 200px;
+
+      &::after {
+        content: "";
+
+        display: block;
+        clear: both;
+      }
+
+      a {
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+      }
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 
   .main-text {
     &__buttons {
-      width: 100%;
       flex-direction: column;
+      width: 100%;
     }
   }
 
