@@ -21,4 +21,5 @@ $(document).ready(function() {
     //= partials/events-gallery.js
     //= partials/filter.js
     //= partials/team-show.js
+    //= partials/jobs-show.js
 });
