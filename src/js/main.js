@@ -6,7 +6,7 @@
 
 
 $(document).ready(function() {
-  //= partials/menu.js
+    //= partials/menu.js
     //= partials/info-dropdown.js
     //= partials/slider.js
     //= partials/show.js
