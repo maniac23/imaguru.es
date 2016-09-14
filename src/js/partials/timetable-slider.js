@@ -6,22 +6,4 @@ $('.events-timetable__list').slick({
   arrows: true,
   draggable: true,
   infinite: false
-  // responsive: [
-  //   {
-  //     breakpoint: 800,
-  //     settings: {
-  //       slidesToShow: 2,
-  //       arrows: true,
-  //       draggable: true
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 480,
-  //     settings: {
-  //       slidesToShow: 1,
-  //       arrows: true,
-  //       draggable: true
-  //     }
-  //   }
-  // ]
 });
