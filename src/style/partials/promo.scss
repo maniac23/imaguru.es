@@ -31,6 +31,11 @@
     padding-bottom: 1px;
   }
 
+  &--events {
+    background: url("../img/events_bg.jpg") center;
+    background-size: cover;
+  }
+
   &--contact-us {
     min-height: calc(100vh - 79px);
 
