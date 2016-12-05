@@ -77,7 +77,7 @@
       color: $white-color;
       font-size: 0.875rem;
       text-decoration: none;
-      padding-right: 5px;
+      padding: 0 5px;
 
       &:not(:last-child) {
         border-right: 1px solid $white-color;

@@ -19,6 +19,7 @@
     cursor: pointer;
     opacity: 0.5;
     outline: none;
+    padding: 0;
   }
 
   & .slick-active {
@@ -63,7 +64,7 @@
   left: 95%;
   transform: translateY(-50%) rotate(-135deg);
 }
-// 
+//
 // .slick-list {
 //   width: 100%;
 // }

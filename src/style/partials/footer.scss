@@ -1,6 +1,7 @@
 .main-footer {
   position: relative;
   z-index: 2;
+  font-family: Raleway, Arial, sans-serif;
 
   display: flex;
   flex-direction: row;
@@ -9,7 +10,6 @@
   padding: 70px 14.453125%;
 
   font-weight: 300;
-  font-family: Raleway, Arial, sans-serif;
   color: $white-color;
 
   background-color: $footer-bg;
@@ -53,11 +53,23 @@
     outline: none;
   }
 
-  .btn {
+  input[type="submit"] {
     padding: 7px 20px;
-
     font-weight: 600;
     font-family: Raleway;
+    opacity: 1;
+
+    @extend .btn;
+  }
+
+  input[type="submit"]:disabled {
+    opacity: 0.1;
+
+    &:hover {
+      background: initial;
+      cursor: default;
+      color: initial;
+    }
   }
 }
 
@@ -71,11 +83,12 @@
     list-style-type: none;
   }
 
-  &__item {
+  .menu-item {
     margin-bottom: 10px;
+    padding: 0;
   }
 
-  &__link {
+  a {
     font-size: 0.875rem;
     line-height: 1.2;
     color: $white-color;
@@ -92,11 +105,20 @@
   @extend .footer-menu__list;
 
   &__item {
-    @extend .footer-menu__item;
+    margin-bottom: 10px;
+    padding: 0;
   }
 
   a {
-    @extend .footer-menu__link;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    color: $white-color;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -107,6 +129,7 @@
   .main-footer {
     flex-direction: column;
     justify-content: center;
+    padding: 70px 10%;
 
     &__left {
       margin-bottom: 60px;
@@ -129,7 +152,11 @@
     font-size: 1rem;
   }
 
-  .footer-menu__link {
-    font-size: 1.2rem;
+  .footer-menu a {
+    font-size: 1.1rem;
+  }
+
+  .footer-social a {
+    font-size: 1.1rem;
   }
 }
